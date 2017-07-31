@@ -1,0 +1,7 @@
+
+
+/************ 하단 색상 및 사이즈 *************/
+.footer_text { background-color:#f2f2f2; padding:14px 0px;}
+.footer_text ul { list-style:none; }
+.footer_text ul li { float:left;text-align:center;}
+.footer_logo_bg { background-color:#cccccc; }
