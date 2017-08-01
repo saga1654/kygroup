@@ -22,15 +22,32 @@
 
 /************ MAIN 컨텐츠 ******************/
 #main-container {min-width:1004px;}
-#main-container .contents { width:1004px; margin:0 auto; padding:26px 0px; }
+#main-container .contents { width:1004px; margin:0 auto; padding:26px 0px; height:564px; }
 #main-container .contents .c01 { }
 #main-container .contents .c01 .left_box { width:239px; height:250px;  position: relative; float:left; }
-#main-container .contents .c01 .center_box { width:494px; height:250px; position: relative; left:16px; border:1px solid #dadada; float:left; }
+#main-container .contents .c01 .center_box { width:494px; height:250px; position: relative; left:16px; border:1px solid #dadada; float:left; background-color:#fff; }
 
-#main-container .contents .c01 .center_box .kytitle { }
+#main-container .contents .c01 .center_box .kytitle { padding:23px; float:left; }
+#main-container .contents .c01 .center_box .kytitle_plus { padding:23px; float:right; }
+#main-container .contents .c01 .center_box .newsList { width:447px; margin:0 auto; }
+#main-container .contents .c01 .center_box .newsList .kynews_table tr { border-bottom:1px solid #e5e5e5;}
+#main-container .contents .c01 .center_box .newsList .kynews_table tr td { color:#888888; font-size:11px;  padding:10px 0px 10px 0px; }
+#main-container .contents .c01 .center_box .newsList .kynews_table tr:last-child { color:#888888; font-size:11px;  padding:14px 0px 5px 0px;  border-bottom: none;}
+#main-container .contents .c01 .center_box .newsList .kynews_table tr td:last-child { text-align: right;}
 
 #main-container .contents .c01 .right_box { width:239px; height:250px; position: relative; left:32px;float:left; }
 
+
+#main-container .contents .c02 { position: relative; top:16px;}
+#main-container .contents .c02 .box01 { width:239px; height:250px;  position: relative; float:left; }
+#main-container .contents .c02 .box02 { width:239px; height:250px;  position: relative; left:16px; float:left;}
+#main-container .contents .c02 .box03 { width:239px; height:250px;  position: relative; left:32px;  float:left;}
+#main-container .contents .c02 .box04 { width:239px; height:250px;  position: relative; left:48px;  float:left; }
+
+
+#main-container .customer { background-color:#e5eff0; height:333px; margin:0 auto; text-align:center; padding:50px 0px; }
+#main-container .customer .title_line { background-color:#357ea6; height:2px; width:29px; margin:0 auto; }
+#main-container .customer .title { color:#3d4040; text-align: center; font-size:18px; padding-top:17px; padding-bottom:40px; }
 
 /************ 하단 색상 및 사이즈 *************/
 .footer_text { background-color:#f2f2f2; padding:14px 0px;}
