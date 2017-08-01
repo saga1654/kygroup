@@ -7,8 +7,15 @@
 .top_header .top_gnb ul a { text-decoration:none; color:#fff; }
 
 
-.top_header .top_gnb_menu { border:1px solid #ccc; }
-.top_header .top_bng_menu .logo { width:255px; }
+.top_gnb_menu { background-color:#fff; height:82px; }
+.top_gnb_menu .menu { width:1004px; margin:0 auto; padding:28px 0px 23px 0px;}
+.top_gnb_menu .logo { width:270px; float:left;  }
+.top_gnb_menu .menu_btn { width:600px; float:left;}
+.top_gnb_menu .menu_btn ul { padding-top:5px; }
+.top_gnb_menu .menu_btn ul li { display:inline; font-size:18px; font-weight: bold; padding-left:40px;}
+.top_gnb_menu .share_btn { float:right; padding-top:2px;}
+.top_gnb_menu .share_btn ul { padding:0px; }
+.top_gnb_menu .share_btn li { display:inline;  }
 
 /************ 하단 색상 및 사이즈 *************/
 .footer_text { background-color:#f2f2f2; padding:14px 0px;}
