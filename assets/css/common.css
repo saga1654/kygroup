@@ -4708,10 +4708,7 @@ a.list-group-item:focus {
 .si-users:before {
   content: "\e001";
 }
-#header-navbar {
-  min-height: 60px;
-  background-color: #fff;
-}
+
 #header-navbar:before,
 #header-navbar:after {
   content: " ";

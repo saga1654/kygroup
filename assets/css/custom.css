@@ -1,3 +1,10 @@
+/*********** 상단 색상 ******************/
+.top_header { background-color:#357ea6; text-align:center; }
+.top_header .top_gnb { width:1004px;  margin:0 auto; color:#fff; text-align:right; padding:9px 0px 1px 0px;}
+.top_header .top_gnb ul {}
+.top_header .top_gnb ul li { display:inline; padding-left:9px; font-size:11px;}
+/*.top_header .top_gnb ul li:first-child { width:200px; }*/
+.top_header .top_gnb ul a { text-decoration:none; color:#fff; }
 
 
 /************ 하단 색상 및 사이즈 *************/
