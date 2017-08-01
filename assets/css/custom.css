@@ -47,10 +47,52 @@
 
 #main-container .customer { background-color:#e5eff0; height:333px; margin:0 auto; text-align:center; padding:50px 0px; }
 #main-container .customer .title_line { background-color:#357ea6; height:2px; width:29px; margin:0 auto; }
-#main-container .customer .title { color:#3d4040; text-align: center; font-size:18px; padding-top:17px; padding-bottom:40px; }
+#main-container .customer .title { color:#3d4040; font-size:18px; width:200px; padding-top:17px; margin:0 auto; text-align: center; padding-bottom:40px; }
+
+#main-container .customer .customer_box { width:1004px; margin:0 auto; text-align:center; }
+#main-container .customer ul { padding:0px;}
+#main-container .customer ul li:first-child { display:inline; padding:0px; }
+#main-container .customer ul li { display:inline; padding:0px 0px 0px 10px; }
+
+
+
+
+#main-container .music { background-color:#c3dae7; height:252px; margin:0 auto; text-align:center; padding:50px 0px; }
+#main-container .music .title_line { background-color:#357ea6; height:2px; width:29px; margin:0 auto; }
+#main-container .music .title { color:#3d4040; font-size:18px; width:200px; padding-top:17px; margin:0 auto; text-align: center; padding-bottom:40px; }
+
+#main-container .music .music_box  { width:1004px; margin:0 auto; text-align:center; }
+#main-container .music ul { padding:0px;}
+#main-container .music ul li:first-child { display:inline; padding:0px; }
+#main-container .music ul li { display:inline; padding:0px 0px 0px 10px; }
+
+
+#main-container .music2 { margin:0 auto; text-align:center; padding:54px 0px 48px 0px; width:1004px; }
+#main-container .music2 ul { padding:0px; }
+#main-container .music2 ul li { display:inline; padding:0px 35px 0px 35px; }
+
+
+#main-container .callcenter { margin:0 auto; text-align:center; padding:0px 0px; width:1004px; }
+#main-container .callcenter ul { padding:0px; }
+#main-container .callcenter ul li:first-child{ display:inline; padding:0px; }
+#main-container .callcenter ul li { display:inline; padding-left:10px; }
+
+#main-container .footer_logo { margin:0 auto; text-align:center; padding:39px 0px 20px 0px; width:1004px; }
+#main-container .footer_logo ul { padding:0px; }
+#main-container .footer_logo ul li:first-child{ display:inline; padding:0px; }
+#main-container .footer_logo ul li { display:inline; padding-left:52px; }
+
 
 /************ 하단 색상 및 사이즈 *************/
-.footer_text { background-color:#f2f2f2; padding:14px 0px;}
-.footer_text ul { list-style:none; }
-.footer_text ul li { float:left;text-align:center;}
+.page-footer { background-color:#f2f2f2;  }
+.footer_text {  padding:14px 0px; margin:0 auto; width:1004px; text-align:center;}
+.footer_text ul { list-style:none; padding-top:10px; }
+.footer_text ul li:first-child { display:inline;text-align:center; padding:0px;}
+.footer_text ul li { display:inline;text-align:center; padding:0px 30px;}
+.footer_text ul a { text-decoration:none; color:#000;}
 .footer_logo_bg { background-color:#cccccc; }
+
+
+.footer_main { background-color:#cccccc; padding:29px 0px 26px 0px;  }
+.footer_main .kylogo { margin:0 auto; text-align: center; width:1004px;   }
+.footer_main .copyright { text-align:center; margin:0 auto; width:1004px; font-size:11px; color:#000; padding:20px 0px 0px 0px; }
