@@ -1316,6 +1316,5 @@ jQuery(function(){
 
     var height = $(".main_contents").height();
     height = height + 200;
-    alert(height);
     $(".left_menu").css("height", height);
 });

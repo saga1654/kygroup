@@ -98,9 +98,9 @@
 #main-container .left_menu .menu_gnb .step2 li a { padding:0px; text-decoration:none; color:#585858; }
 
 
-#main-container .container .main_contents { padding:36px 72px; margin-left:247px; background-color:#fff; width:753px; }
+#main-container .container .main_contents { padding:36px 0px 36px 72px; margin-left:247px; background-color:#fff; width:753px;}
 #main-container .container .main_contents .contents_title { color:#357ea6; font-weight:bold; font-size:24px; }
-#main-container .container .main_contents .txt {  padding-top:36px; }
+#main-container .container .main_contents .txt {  padding-top:36px;  }
 
 /************ 하단 색상 및 사이즈 *************/
 .page-footer { background-color:#f2f2f2;  }
