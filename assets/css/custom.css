@@ -131,3 +131,14 @@
 .tab-content{padding:10px 10px 0px 10px;}
 
 .card {background: #FFF none repeat scroll 0% 0%;  margin-bottom: 0px; }
+
+/****** 인재채용 ******/
+.recruit_info {
+    width: 680px;
+    height: 116px;
+    background: url('http://www.kumyoung.co.kr/img/g/bg_cva_top.gif') no-repeat;
+}
+.recruit_info img {
+    padding-top:25px;
+    padding-left: 21px;
+}
