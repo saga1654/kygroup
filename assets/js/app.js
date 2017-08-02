@@ -1315,6 +1315,7 @@ jQuery(function(){
     }
 
     var height = $(".main_contents").height();
-    height = height + 200;
+
+    height = height + 250;
     $(".left_menu").css("height", height);
 });

@@ -84,7 +84,7 @@
 
 #main-container .container { width:1004px; margin:0 auto;  }
 
-#main-container .left_menu {float:left; width:247px; border-left:1px solid #dadada; border-right:1px solid #dadada;  }
+#main-container .left_menu {float:left; width:247px; border-left:1px solid #dadada; border-right:1px solid #dadada; }
 #main-container .left_menu .left_title { background-color:#357ea6; padding:36px 0px; text-align: center; color:#fff; font-size:24px; }
 #main-container .left_menu .menu_gnb { width:247px; min-height:500px; }
 #main-container .left_menu .menu_gnb .step1 { list-style: none; padding:0px; }
@@ -98,7 +98,7 @@
 #main-container .left_menu .menu_gnb .step2 li a { padding:0px; text-decoration:none; color:#585858; }
 
 
-#main-container .container .main_contents { padding:36px 0px 36px 72px; margin-left:247px; background-color:#fff; width:753px;}
+#main-container .container .main_contents { padding:36px 0px 0px 72px; margin-left:247px; background-color:#fff; width:753px;}
 #main-container .container .main_contents .contents_title { color:#357ea6; font-weight:bold; font-size:24px; }
 #main-container .container .main_contents .txt {  padding-top:36px;  }
 
@@ -115,3 +115,19 @@
 .footer_main { background-color:#cccccc; padding:29px 0px 26px 0px;  }
 .footer_main .kylogo { margin:0 auto; text-align: center; width:1004px;   }
 .footer_main .copyright { text-align:center; margin:0 auto; width:1004px; font-size:11px; color:#000; padding:20px 0px 0px 0px; }
+
+
+
+/*********** TAB MENU *************************/
+.row { }
+.nav-tabs { border-bottom: 2px solid #DDD; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-tabs > li > a { border: none; color: #666; }
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+.nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0px 0px 0px; }
+.tab-content{padding:10px 10px 0px 10px;}
+
+.card {background: #FFF none repeat scroll 0% 0%;  margin-bottom: 0px; }
