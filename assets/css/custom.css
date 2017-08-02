@@ -86,7 +86,7 @@
 
 #main-container .left_menu {float:left; width:247px; border-left:1px solid #dadada; border-right:1px solid #dadada;  }
 #main-container .left_menu .left_title { background-color:#357ea6; padding:36px 0px; text-align: center; color:#fff; font-size:24px; }
-#main-container .left_menu .menu_gnb { width:247px; min-height:900px; }
+#main-container .left_menu .menu_gnb { width:247px; min-height:500px; }
 #main-container .left_menu .menu_gnb .step1 { list-style: none; padding:0px; }
 #main-container .left_menu .menu_gnb .step1 li { border-bottom:1px solid #dadada; width:100%; padding:13px 0px 10px 0px; }
 #main-container .left_menu .menu_gnb .step1 li:last-child { width:100%; padding:13px 0px 5px 0px; }

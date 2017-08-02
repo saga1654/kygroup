@@ -106,10 +106,11 @@ var App = function() {
         var $hHeader     = $lHeader.outerHeight();
         var $hFooter     = $lFooter.outerHeight();
 
+        //alert("OK");
         if ($lPage.hasClass('header-navbar-fixed')) {
-            $lMain.css('min-height', $hWindow - $hFooter);
+            //$lMain.css('min-height', $hWindow - $hFooter);
         } else {
-            $lMain.css('min-height', $hWindow - ($hHeader + $hFooter));
+            //$lMain.css('min-height', $hWindow - ($hHeader + $hFooter));
         }
     };
 
@@ -1312,4 +1313,9 @@ jQuery(function(){
     if (typeof angular == 'undefined') {
         App.init();
     }
+
+    var height = $(".main_contents").height();
+    height = height + 200;
+    alert(height);
+    $(".left_menu").css("height", height);
 });
