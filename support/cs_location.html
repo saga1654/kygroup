@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>금영그룹 > 고객지원</title>
+
+    <meta name="description" content="금영그룹">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Bootstrap and OneUI CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <script type="text/javascript">
+        var map, markTitle;
+        var mapLap = $j("#map_lap");
+
+        $j(document).ready(function(){
+            $j(".daum_map_view").bind("click", function (e) {
+                $j("#map_lap").css("top", e.pageY+20).css("left", e.pageX-620);
+                markTitle = $j(this).attr("title");
+                addr2map.pingSearch($j(this).attr("alt"));
+            }).css("cursor","pointer");
+
+            // 맵 닫기 버튼
+            $j("#map_close").bind("click", function () {
+                $j("#map_lap").hide();
+            }).css("cursor","pointer");
+
+            // 맵 생성
+            map = new DMap("map", {reduce_scale:true, level:2, zindex:100 ,width:600, height:400});
+            map.addControl(new DZoomControl());
+        });
+
+        // 맵 위치 바꾸기
+        function setMap(lat, lng) {
+
+            var point = new DLatLng(lat, lng);
+            var mark = new DMark(point, {infowindow:new DInfoWindow(markTitle), draggable:false});
+
+            map.clearOverlay();
+            map.addOverlay(mark);
+            map.setCenter(point, 2);
+
+            $j("#map_lap").show();
+        }
+
+        // 주소 변환 callback
+        function setSearch(z) {
+            // 결과값이 하나 이상이라면 첫번째 맵 주소를 보여준다
+            if(z.channel.item.length > 0 )
+                setMap(z.channel.item[0].point_y, z.channel.item[0].point_x, markTitle);
+            // 결과 값이 없다면
+            else
+                alert('위치정보가 부정확 합니다.');
+        }
+
+        // 주소 변환 obj
+        var addr2map = {
+            apikey: "f33bc2d4b12199c0d50fd73bc77db4582c990e1d",
+            title: "",
+
+            // 검색을 요청하는 함수
+            pingSearch : function(addr, title)
+            {
+                if (addr)
+                {
+                    addr2map.title = addr2map;
+                    addr2map.s = document.createElement('script');
+                    addr2map.s.type ='text/javascript';
+                    addr2map.s.charset ='utf-8';
+                    addr2map.s.src = 'https://apis.daum.net/local/geo/addr2coord?apikey=' + addr2map.apikey + '&output=json&q=' + encodeURI(addr);
+                    document.getElementsByTagName('head')[0].appendChild(addr2map.s);
+                }
+            }
+        };
+    </script>
+    <!-- 다음 맵 -->
+</head>
+<body>
+<div id="page-container">
+
+
+    <!-- Header -->
+    <header id="header-navbar">
+        <div class="top_header">
+            <div class="top_gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">CUG</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top_gnb_menu">
+            <div class="menu">
+                <div class="logo"><img src="../img/main/top_logo.gif"></div>
+                <div class="menu_btn">
+                    <ul>
+                        <li>기업소개</li>
+                        <li>사업영역</li>
+                        <li>제품소개</li>
+                        <li>고객지원</li>
+                        <li>인재채용</li>
+                    </ul>
+                </div>
+                <div class="share_btn">
+                    <ul>
+                        <li><img src="../img/main/top_facebook_btn.gif"></li>
+                        <li><img src="../img/main/top_twitter_btn.gif"></li>
+                        <li><img src="../img/main/top_naverblog_btn.gif"></li>
+                        <li><img src="../img/main/top_instagram_btn.gif"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_line">
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+
+
+        <!-- 가운데 컨텐츠 -->
+        <div class="container">
+            <div class="left_menu">
+                <div class="left_title">
+                    고객지원
+                </div>
+                <div class="menu_gnb">
+                    <ul class="step1">
+                        <li class="te"><a href="cs_use_guide.html"><strong>고객서비스센터</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="cs_use_guide.html">- 이용방법</a></li>
+                                <li><a href="cs_treat_standard.html">- A/S 처리기준</a></li>
+                                <li><a href="cs_location.html">- 센터위치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_info.html"><strong>고객의 소리</strong></a></li>
+                        <li><a href="cs_write_idea.html"><strong>아이디어제안</strong></a></li>
+                        <li><a href="faq_list.html"><strong>자주 묻는 질문</strong></a></li>
+                        <li><a href="notice_list.html"><strong>고객지원 소식</strong></a></li>
+                        <li><a href="karaoke_search_list.html"><strong>노래방 검색</strong></a></li>
+                        <li><a href="new_poster.html"><strong>반주기 자료실</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="new_poster.html">- 신곡포스터 / 속지 / 애창곡</a></li>
+                                <li><a href="acc_archive_tech_list.html">- 기술지</a></li>
+                                <li><a href="acc_archive_prdmanual_list.html">- 제품설명서</a></li>
+                                <li><a href="acc_archive_proupdate_list.html">- 프로그램 업데이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agent_info_list.html"><strong>대리점 정보</strong></a></li>
+                        <li><a href="foundation_start_01.html"><strong>창업안내</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="foundation_start_01.html">- 창업준</a></li>
+                                <li><a href="foundation_inquiry_write.html">- 창업문의</a></li>
+                                <li><a href="success_story_0101.html">- 성공업소사례</a></li>
+                                <li><a href="related_rules_list.html">- 관련법률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="refuge_info_reg.html"><strong>피난안내영상물 등록</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 다음맵 -->
+            <div id="map_lap" style="position: absolute; display: none; z-index:100; " >
+                <div id="map" class="" style="width: 600px; height: 400px;" >
+                    <div id="map_close" class="piro_close" style="visibility: visible; top: 0px; right: 30px;"/></div>
+                </div>
+            </div>
+
+
+        <!-- 다음맵 -->
+            <!-- Contents -->
+            <div class="main_contents" id="Contents">
+
+                <!-- 지도와탭메뉴 -->
+                <div class="cs_location">
+                    <!-- 지도 -->
+                    <div class="csl_map">
+                        <script type="text/javascript">jswf_include('/flash/cs_location','295px','274px','always','#ffffff','transparent','')</script>
+                    </div>
+                    <!-- //지도 -->
+
+                    <!-- 지도_서비스센터 -->
+                    <div class="csl_memo">
+                        <!-- 지도_타이틀 -->
+                        <div class="titlearea">
+                            <h3 class="title"><img src="http://www.kumyoung.co.kr/img/support/cs_location_title.png" alt="㈜ KY 금영 서비스센터 "></h3>
+                            <p class="memo"><img src="http://www.kumyoung.co.kr/img/support/cs_location_titlesub.gif" alt="지역별 금영 서비스센터 위치를 보시려면 해당 지역을 클릭 해 주세요"></p>
+                        </div>
+                        <!-- //지도_타이틀 -->
+
+                        <div align="left" style="top:-22px; position:relative;">
+                            <img src="http://www.kumyoung.co.kr/img/support/svr_tel_info.png">
+                        </div>
+
+                        <!-- 지도_탭메뉴 -->
+                        <div class="area">
+                            <h4 class="area_title"><img src="http://www.kumyoung.co.kr/img/support/area_inseoul.gif" alt="서울지역"></h4>
+                            <ul class="area_sub">
+                                <li class="first"><a href="#ejr"><img src="http://www.kumyoung.co.kr/img/b/loc_euljiro.jpg" alt="을지로"></a></li>
+                                <li><a href="#ys"><img src="http://www.kumyoung.co.kr/img/b/loc_yongsan.jpg" alt="용산"></a></li>
+                                <li class="last"><a href="#ydp"><img src="http://www.kumyoung.co.kr/img/b/loc_youngdp.jpg" alt="영등포"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="area area_end">
+                            <h4 class="area_title"><img src="http://www.kumyoung.co.kr/img/support/area_outseoul.gif" alt="서울 외 지역"></h4>
+                            <ul class="area_sub">
+                                <li class="first"><a href="#ps"><img src="http://www.kumyoung.co.kr/img/b/loc_busan.jpg" alt="부산"></a></li>
+                                <li><a href="#dj"><img src="http://www.kumyoung.co.kr/img/b/loc_daejeon.jpg" alt="대전"></a></li>
+                                <li><a href="#dg"><img src="http://www.kumyoung.co.kr/img/b/loc_daegu.jpg" alt="대구"></a></li>
+                                <li class="last"><a href="#kj"><img src="http://www.kumyoung.co.kr/img/b/loc_gwangju.jpg" alt="광주"></a></li>
+                            </ul>
+                        </div>
+                        <!-- //지도_탭메뉴 -->
+                    </div>
+                    <!-- 지도_서비스센터 -->
+                </div>
+                <!-- //지도와탭메뉴 -->
+
+                <!-- 센터1ea -->
+                <a name="ejr"></a>
+                <div class="csl_center">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_uel.gif" alt="을지로 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/3e58v" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="서울특별시 중구 산림동 207-2" title="을지로 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" width="680" summary="을지로 서비스센터입니다">
+                            <caption>을지로 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>서울 중구 을지로4가 대림상가 4층 458호 을지로 4가 1번출구 (2,5호선)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+
+                <!-- 센터1ea -->
+                <a name="ys"></a>
+                <div class="csl_center">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_ysan.png" alt="용산 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/3di3u" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="서울시 용산구 한강로2가 15-13" title="용산 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" width="680" summary="용산 서비스센터입니다">
+                            <caption>용산 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>서울시 용산구 한강로2가 15-13 나진상가 20동 121호</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+
+                <!-- 센터1ea -->
+                <a name="ydp"></a>
+                <div class="csl_center">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_yeong.gif" alt="영등포 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/t6yr" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="서울 영등포구 당산동2가 30-2" title="영등포 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" width="680" summary="영등포 서비스센터입니다">
+                            <caption>영등포 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>서울 영등포구 당산2가 30-2 영등포 유통상가 1층 바열 1호</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+
+                <!-- 센터1ea -->
+                <a name="ps"></a>
+                <div class="csl_center">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_busan.gif" alt="부산 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/3di4f" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="부산광역시 부산진구 양정1동 389-22번지 2층" title="부산 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" summary="부산 서비스센터입니다">
+                            <caption>부산 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>부산광역시 부산진구 양정1동 389-22번지 2층</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+
+                <!-- 센터1ea -->
+                <a name="dj"></a>
+                <div class="csl_center">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_daejeon.gif" alt="대전 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/3di4o" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="대전광역시 중구 용두동 114-1번지" title="대전 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" width="680" summary="대전 서비스센터입니다">
+                            <caption>대전 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>대전광역시 중구 용두동 114-1번지</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+
+                <!-- 센터1ea -->
+                <a name="dg"></a>
+                <div class="csl_center">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_daegu.gif" alt="대구 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/3di7a" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="대구광역시 중구 서문로1가 82번지" title="대구 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" summary="대구 서비스센터입니다">
+                            <caption>대구 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>대구광역시 중구 서문로1가 82번지</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+
+                <!-- 센터1ea -->
+                <a name="kj"></a>
+                <div class="csl_center csl_center_end">
+                    <h5 class="center_title">
+                        <img src="http://www.kumyoung.co.kr/img/support/loc_tbt_gwang.gif" alt="광주 서비스센터">
+                        <span class="map_view"><a href="http://dmaps.kr/3di7k" target="_blank"><img class="daum_map_view" src="http://www.kumyoung.co.kr/img/b/btn_map_view.gif" alt="광주광역시 동구 금남로5가 177-3번지" title="광주 서비스센터"></a></span>
+                    </h5>
+                    <div class="center_tb">
+                        <table cellpadding="0" cellspacing="0" border="0" summary="광주 서비스센터입니다">
+                            <caption>광주 서비스센터</caption>
+                            <colgroup><col><col></colgroup>
+                            <tbody>
+                            <tr>
+                                <th>주&nbsp;&nbsp;소 : </th>
+                                <td>광주광역시 동구 금남로5가 177-3번지 1층</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //센터1ea -->
+                <!-- //♡♡Memo -->
+            </div>
+
+
+
+
+
+    </main>
+    <!-- Footer -->
+    <footer id="page-footer" class="page-footer">
+        <div class="footer_text">
+            <ul>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">회사위치/연락처</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">대리점안내</a>
+                </li>
+                <li>
+                    <a href="#">반주기 피난안내 영상물 등록</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="footer_main">
+            <div class="kylogo"><img src="../img/main/footer_kylogo.gif"></div>
+            <div class="copyright">COPYRIGHT © 금영그룹(Keumyoung Group Co., Ltd) ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="../assets/js/core/jquery.appear.min.js"></script>
+<script src="../assets/js/core/jquery.countTo.min.js"></script>
+<script src="../assets/js/core/jquery.placeholder.min.js"></script>
+<script src="../assets/js/core/js.cookie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+    });
+</script>
+</body>
+</html>

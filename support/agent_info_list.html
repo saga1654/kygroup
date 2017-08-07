@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>금영그룹 > 고객지원</title>
+
+    <meta name="description" content="금영그룹">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Bootstrap and OneUI CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/support.css">
+
+    <script type="text/javascript">
+
+        $j(document).ready(function(){
+            // left menu
+            var lnbImgId = "lnb_support_faq";
+            //var tmpLnb = $j(lnbImgId).attr("src").value;
+            //alert($j(lnbImgId).attr(""));
+            //$j(lnbImgId).attr("src", tmpLnb[0] + "_on" + tmpLnb[1]);
+
+            // 카테고리 탭
+            //var tabCode = faq;
+            //$j(tabCode).attr("class", $j(tabCode).attr("class") + "_on");
+
+            // 검색
+            $j("#searchBBS").submit(function(){
+                return chkSearch();
+            });
+
+            // 검색어 체크
+//			$j("#sBtn").click(function () {
+//				chkSearch();
+//			}).css("cursor","pointer");
+
+            $j("#sBtn").click(function() {
+                $j("#searchBBS").trigger("submit");
+            }).css("cursor","pointer");
+        });
+
+        function chkSearch(){
+            if($j.trim($j("#sVal").val()).length < 1) {
+                alert("검색어를 입력 하세요.");
+                $j("#sVal").focus();
+                return false;
+            } else {
+                if( !chkSearchWord($j("#sVal").val()) ){
+                    $j("#sVal").focus();
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="page-container">
+
+
+    <!-- Header -->
+    <header id="header-navbar">
+        <div class="top_header">
+            <div class="top_gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">CUG</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top_gnb_menu">
+            <div class="menu">
+                <div class="logo"><img src="../img/main/top_logo.gif"></div>
+                <div class="menu_btn">
+                    <ul>
+                        <li>기업소개</li>
+                        <li>사업영역</li>
+                        <li>제품소개</li>
+                        <li>고객지원</li>
+                        <li>인재채용</li>
+                    </ul>
+                </div>
+                <div class="share_btn">
+                    <ul>
+                        <li><img src="../img/main/top_facebook_btn.gif"></li>
+                        <li><img src="../img/main/top_twitter_btn.gif"></li>
+                        <li><img src="../img/main/top_naverblog_btn.gif"></li>
+                        <li><img src="../img/main/top_instagram_btn.gif"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_line">
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+
+
+        <!-- 가운데 컨텐츠 -->
+        <div class="container">
+            <div class="left_menu">
+                <div class="left_title">
+                    고객지원
+                </div>
+                <div class="menu_gnb">
+                    <ul class="step1">
+                        <li class="te"><a href="cs_use_guide.html"><strong>고객서비스센터</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="cs_use_guide.html">- 이용방법</a></li>
+                                <li><a href="cs_treat_standard.html">- A/S 처리기준</a></li>
+                                <li><a href="cs_location.html">- 센터위치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_info.html"><strong>고객의 소리</strong></a></li>
+                        <li><a href="cs_write_idea.html"><strong>아이디어제안</strong></a></li>
+                        <li><a href="faq_list.html"><strong>자주 묻는 질문</strong></a></li>
+                        <li><a href="notice_list.html"><strong>고객지원 소식</strong></a></li>
+                        <li><a href="karaoke_search_list.html"><strong>노래방 검색</strong></a></li>
+                        <li><a href="new_poster.html"><strong>반주기 자료실</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="new_poster.html">- 신곡포스터 / 속지 / 애창곡</a></li>
+                                <li><a href="acc_archive_tech_list.html">- 기술지</a></li>
+                                <li><a href="acc_archive_prdmanual_list.html">- 제품설명서</a></li>
+                                <li><a href="acc_archive_proupdate_list.html">- 프로그램 업데이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agent_info_list.html"><strong>대리점 정보</strong></a></li>
+                        <li><a href="foundation_start_01.html"><strong>창업안내</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="foundation_start_01.html">- 창업준비</a></li>
+                                <li><a href="foundation_inquiry_write.html">- 창업문의</a></li>
+                                <li><a href="success_story_0101.html">- 성공업소사례</a></li>
+                                <li><a href="related_rules_list.html">- 관련법률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="refuge_info_reg.html"><strong>피난안내영상물 등록</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Contents -->
+            <div class="main_contents" id="Contents">
+                <div class="contents_title">대리점 정보</div>
+                <div class="txt"></div>
+                <!-- ♡♡Memo --> <!-- 컨텐츠영역 width는 680px 입니다 -->
+
+                <!-- 대리점 소식 -->
+                <h3><img src="http://www.kumyoung.co.kr/img/support/h3_agent_info.gif" alt="대리점 소식"></h3>
+                <div class="agent_info_box01">
+                    <dl class="new_agent">
+                        <dt><img src="http://www.kumyoung.co.kr/img/support/new_agent.gif" alt="신설대리점"></dt>
+                        <dd>충북(청주) : 바즈미디어</dd>
+                        <dd>충북(청주) : 월드전자음향</dd>
+                        <dd>충북(음성) : 에이스미디어</dd>
+                        <dd>대전(동구) : 금영미디어</dd>
+                        <dd>경기(안산) : 도레미음향</dd>
+                    </dl>
+                    <dl class="change_name_agent">
+                        <dt><img src="http://www.kumyoung.co.kr/img/support/change_name_agent.gif" alt="상호변경"></dt>
+                        <dd>그린전자 → 디오원시스템</dd>
+                        <dd>케이엠전자 → (주)유아케이엠</dd>
+                        <dd>솔로전자 → SE미디어</dd>
+                    </dl>
+                    <dl class="create_hp">
+                        <dt><img src="http://www.kumyoung.co.kr/img/support/create_hp.gif" alt="홈페이지 개설"></dt>
+                        <dd><a href="http://scssound.com/" target="_new">광주 [수창전자]</a></dd>
+                        <dd><a href="http://www.kyky.kr" target="_new">대전[대전금영]</a></dd>
+                        <dd><a href="http://daesungsound.co.kr/" target="_new">서울 [대성전자기기]</a></dd>
+                        <dd><a href="http://www.worldigital.co.kr/" target="_new">전북익산 [월드음향기기시스템]</a></dd>
+                        <dd><a href="http://www.i-dongil.co.kr" target="_new">경기 [동일전자]</a></dd>
+                    </dl>
+                </div>
+                <!-- //대리점 소식 -->
+
+                <!-- 지역대리점 -->
+                <h3 class="local_agent"><img src="http://www.kumyoung.co.kr/img/support/h3_local_agent.gif" alt="지역대리점"></h3>
+                <div class="agent_info_box02">
+                    <span><img src="http://www.kumyoung.co.kr/img/support/agent_num.gif" alt="전국 대리점 자동 연결 전화 / 1588-2580"></span>
+                    <p class="txt_gudongip"><img src="http://www.kumyoung.co.kr/img/support/txt_gudongip.gif" alt="구·동을 입력하시면‘대리점 검색결과’에서 해당지역 대리점을 찾으실 수 있습니다."></p>
+                    <!-- 게시판검색 -->
+                    <div class="search_agent">
+                        <form name="searchBBS" id="searchBBS" method="GET" action="agent_info_list.asp">
+                            <select name="area">
+                                <option value="all">전체</option>
+
+                                <option value="서울" selected>서울</option>
+
+                                <option value="인천" >인천</option>
+
+                                <option value="울산" >울산</option>
+
+                                <option value="대전" >대전</option>
+
+                                <option value="광주" >광주</option>
+
+                                <option value="대구" >대구</option>
+
+                                <option value="부산" >부산</option>
+
+                                <option value="경기" >경기</option>
+
+                                <option value="충북" >충북</option>
+
+                                <option value="충남" >충남</option>
+
+                                <option value="전북" >전북</option>
+
+                                <option value="전남" >전남</option>
+
+                                <option value="강원" >강원</option>
+
+                                <option value="경북" >경북</option>
+
+                                <option value="경남" >경남</option>
+
+                                <option value="제주" >제주</option>
+
+                            </select>
+                            <input type="text" id="sVal" name="sVal" class="input_bbs" title="키워드 입력" value="">
+                            <img id="sBtn" src="http://www.kumyoung.co.kr/img/b/btn_search_bbs.gif" alt="검색">
+                        </form>
+                    </div>
+                    <!-- //게시판검색 -->
+                </div>
+                <!-- //지역대리점 -->
+
+                <!-- 탭메뉴 -->
+                <ul id="tab_national_kara">
+                    <li class="nkara01_on"><a href="agent_info_list.asp?area=%BC%AD%BF%EF" title="서울" onfocus="this.blur();">서울</a></li>
+                    <li class="nkara02"><a href="agent_info_list.asp?area=%B0%E6%B1%E2" title="경기" onfocus="this.blur();">경기</a></li>
+                    <li class="nkara03"><a href="agent_info_list.asp?area=%C0%CE%C3%B5" title="인천" onfocus="this.blur();">인천</a></li>
+                    <li class="nkara04"><a href="agent_info_list.asp?area=%BF%EF%BB%EA" title="울산" onfocus="this.blur();">울산</a></li>
+                    <li class="nkara05"><a href="agent_info_list.asp?area=%B4%EB%C0%FC" title="대전" onfocus="this.blur();">대전</a></li>
+                    <li class="nkara06"><a href="agent_info_list.asp?area=%B1%A4%C1%D6" title="광주" onfocus="this.blur();">광주</a></li>
+                    <li class="nkara07"><a href="agent_info_list.asp?area=%B4%EB%B1%B8" title="대구" onfocus="this.blur();">대구</a></li>
+                    <li class="nkara08"><a href="agent_info_list.asp?area=%BA%CE%BB%EA" title="부산" onfocus="this.blur();">부산</a></li>
+                    <li class="nkara09"><a href="agent_info_list.asp?area=%C3%E6%BA%CF" title="충북" onfocus="this.blur();">충북</a></li>
+                    <li class="nkara10"><a href="agent_info_list.asp?area=%C3%E6%B3%B2" title="충남" onfocus="this.blur();">충남</a></li>
+                    <li class="nkara11"><a href="agent_info_list.asp?area=%C0%FC%BA%CF" title="전북" onfocus="this.blur();">전북</a></li>
+                    <li class="nkara12"><a href="agent_info_list.asp?area=%C0%FC%B3%B2" title="전남" onfocus="this.blur();">전남</a></li>
+                    <li class="nkara13"><a href="agent_info_list.asp?area=%B0%E6%BA%CF" title="경북" onfocus="this.blur();">경북</a></li>
+                    <li class="nkara14"><a href="agent_info_list.asp?area=%B0%E6%B3%B2" title="경남" onfocus="this.blur();">경남</a></li>
+                    <li class="nkara15"><a href="agent_info_list.asp?area=%B0%AD%BF%F8" title="강원" onfocus="this.blur();">강원</a></li>
+                    <li class="nkara16"><a href="agent_info_list.asp?area=%C1%A6%C1%D6" title="제주" onfocus="this.blur();">제주</a></li>
+                </ul>
+                <!-- //탭메뉴 -->
+
+                <!-- 검색결과타이틀 -->
+                <div class="search_result_title">
+                    <div class="search_icon_info">
+                        <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt=""><img src="http://www.kumyoung.co.kr/img/bbs/txt_map_view.gif" alt="약도보기" class="item1"-->
+                        <img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt=""><img src="http://www.kumyoung.co.kr/img/bbs/txt_homepage.gif" alt="홈페이지" class="item1">
+                    </div>
+                    <div class="search_result_memo">
+
+                    </div>
+                </div>
+                <!-- 검색결과타이틀 -->
+
+                <!-- 게시판목록 -->
+                <div class="bbs_list2">
+                    <table cellpadding="0" cellspacing="0" border="0" width="680" summary="대리점 정보 목록입니다">
+                        <caption>대리점 정보</caption>
+                        <colgroup>
+                            <col width="110px">
+                            <!--col width="80px"-->
+                            <col width="265px">
+                            <col width="125px">
+                            <col width="100px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="first"><img src="http://www.kumyoung.co.kr/img/bbs/th_store_name.gif" alt="대리점명"></th>
+                            <!--th><img src="http://www.kumyoung.co.kr/img/bbs/th_president.gif" alt="대표"></th-->
+                            <th><img src="http://www.kumyoung.co.kr/img/bbs/th_address.gif" alt="주소"></th>
+                            <th><img src="http://www.kumyoung.co.kr/img/bbs/th_telfax.gif" alt="전화/FAX"></th>
+                            <th><img src="http://www.kumyoung.co.kr/img/bbs/th_maphomepage.gif" alt="약도/홈페이지"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--tr class="line2 bg_color">
+                            <th>강서노래방</th>
+                            <td>정종민민</td>
+                            <td class="memo">서울 용산구 한강로2가 나진상가 한강로2가 나진상가 한강로2가 나진상가 20동 137호</td>
+                            <td class="memo2">TEL : 02) 333-7501<br>FAX : 02-6733-7220</td>
+                            <td>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="약도"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+                            </td>
+                        </tr>
+                        <tr class="line2">
+                            <th>강서강서노래방</th>
+                            <td>정종</td>
+                            <td class="memo">서울 용산구 한강로2가 나진상가 20동 137호</td>
+                            <td class="memo2">TEL : 02) 333-7501<br>FAX : 02-6733-7220</td>
+                            <td>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="약도"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+                            </td>
+                        </tr-->
+
+                        <tr class="line2 bg_color">
+                            <th>(주)금영미디어</th>
+                            <!--td></td-->
+                            <td class="memo">서울 중구 을지로4가 &nbsp;9-6&nbsp;대림상가 4층 459호</td>
+                            <td class="memo2">TEL : 02-2265-1540<br>FAX : 0505-265-1541</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 중구 을지로4가  9-6" title="(주)금영미디어" class="map_icon"-->
+
+                                <a href="http://www.kumyoungmall.co.kr" target="_blank"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2">
+                            <th>(주)대성전자기기</th>
+                            <!--td></td-->
+                            <td class="memo">서울 종로구 장사동&nbsp;173&nbsp;세운상가 가동 라열 117호</td>
+                            <td class="memo2">TEL : 02-2279-1927<br>FAX : 02-2279-1928</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 종로구 장사동 173" title="(주)대성전자기기" class="map_icon"-->
+
+                                <a href="http://daesungsound.co.kr" target="_blank"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th>(주)드림음향</th>
+                            <!--td></td-->
+                            <td class="memo">서울 중구 을지로4가&nbsp;9-6&nbsp;대림상가 3층 가.나열 365호</td>
+                            <td class="memo2">TEL : 02-2279-4759<br>FAX : 02-2279-4729</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 중구 을지로4가 9-6" title="(주)드림음향" class="map_icon"-->
+
+                                <a href="http://www.dmmedia.co.kr" target="_blank"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2">
+                            <th>(주)세림아이티미디어</th>
+                            <!--td></td-->
+                            <td class="memo">서울 영등포구 당산동2가&nbsp;30-2 &nbsp;유통상가 3층 다열 16호</td>
+                            <td class="memo2">TEL : 02-2679-0040<br>FAX : 02-2632-8702</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 영등포구 당산동2가 30-2 " title="(주)세림아이티미디어" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th>(주)솔로전자</th>
+                            <!--td></td-->
+                            <td class="memo">서울 용산구 한강로2가&nbsp;15-13&nbsp; 나진상가 20동 101호</td>
+                            <td class="memo2">TEL : 02-702-4415<br>FAX : 02-702-4417</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 용산구 한강로2가 15-13" title="(주)솔로전자" class="map_icon"-->
+
+                                <a href="http://www.solo-e.co.kr" target="_blank"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2">
+                            <th>(주)용산금영</th>
+                            <!--td></td-->
+                            <td class="memo">서울 용산구 한강로2가&nbsp;15-13&nbsp;나진상가 가열 20-111호</td>
+                            <td class="memo2">TEL : 02-703-5182<br>FAX : 02-6733-5185</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 용산구 한강로2가 15-13" title="(주)용산금영" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th>(주)유아케이엠</th>
+                            <!--td></td-->
+                            <td class="memo">서울 영등포구 당산동2가&nbsp;30-2 &nbsp;유통상가 3층 마열 38호</td>
+                            <td class="memo2">TEL : 02-2068-5471<br>FAX : 02-2068-5472</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 영등포구 당산동2가 30-2 " title="(주)유아케이엠" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2">
+                            <th>(주)정인전자</th>
+                            <!--td></td-->
+                            <td class="memo">서울 용산구 한강로2가&nbsp;15-13&nbsp;나진상가 20동 1층 37호</td>
+                            <td class="memo2">TEL : 02-703-3181<br>FAX : 02-6733-7220</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 용산구 한강로2가 15-13" title="(주)정인전자" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th>(주)호성음향</th>
+                            <!--td></td-->
+                            <td class="memo">서울 중구 산림동 &nbsp;청계천로 160번지&nbsp;청계상가 1층 다열 1,2,3,4호</td>
+                            <td class="memo2">TEL : 02-2267-5939<br>FAX : 02-2261-5678</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 중구 산림동  청계천로 160번지" title="(주)호성음향" class="map_icon"-->
+
+                                <a href="http://www.hosungmall.com" target="_blank"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2">
+                            <th>강동금영</th>
+                            <!--td></td-->
+                            <td class="memo">서울 강동구 성내동 &nbsp;245-14&nbsp;</td>
+                            <td class="memo2">TEL : 02-478-0188<br>FAX : 02-478-0189</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 강동구 성내동  245-14" title="강동금영" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th>강서금영</th>
+                            <!--td></td-->
+                            <td class="memo">서울 양천구 신정동&nbsp;939-6&nbsp;오봉빌딩 1층</td>
+                            <td class="memo2">TEL : 02)2607-6242<br>FAX : 02)2607-6240</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 양천구 신정동 939-6" title="강서금영" class="map_icon"-->
+
+                                <a href="http://www.kumyoung21.co.kr" target="_blank"><img src="http://www.kumyoung.co.kr/img/bbs/icon_homepage.gif" alt="홈페이지"></a>
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2">
+                            <th>성전자</th>
+                            <!--td></td-->
+                            <td class="memo">서울 중구 을지로4가 &nbsp;9-6&nbsp;대림상가 다열 355호</td>
+                            <td class="memo2">TEL : 02-2285-3110<br>FAX : </td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 중구 을지로4가  9-6" title="성전자" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th>주식회사오성일렉</th>
+                            <!--td></td-->
+                            <td class="memo">서울 종로구 장사동 &nbsp;173&nbsp;세운상가 1층 가동 라열136호</td>
+                            <td class="memo2">TEL : 02-2267-6016<br>FAX : 02-2266-6016</td>
+                            <td>
+                                <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울 종로구 장사동  173" title="주식회사오성일렉" class="map_icon"-->
+
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //게시판목록 -->
+
+                <!-- Paging -->
+                <div id="pagingwrap">
+                    <div class="paging">
+                        <span><img src='http://www.kumyoung.co.kr/img/bbs/page_first.gif' alt='첫 페이지'></span><span><img src='http://www.kumyoung.co.kr/img/bbs/page_prev.gif' alt='이전 10 페이지'></span> <strong>1</strong> <span><img src='http://www.kumyoung.co.kr/img/bbs/page_next.gif' alt='다음 10 페이지'></span><a href="?page=1&amp;area=서울&amp;seq=0&amp;sVar=&amp;sVal="><span><img src='http://www.kumyoung.co.kr/img/bbs/page_last.gif' alt='마지막 페이지'></span></a>
+                    </div>
+                </div>
+                <!-- //Paging -->
+
+                <!-- //♡♡Memo -->
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    <!-- Foter -->
+    <footer id="page-footer" class="page-footer">
+        <div class="footer_text">
+            <ul>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">회사위치/연락처</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">대리점안내</a>
+                </li>
+                <li>
+                    <a href="#">반주기 피난안내 영상물 등록</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="footer_main">
+            <div class="kylogo"><img src="../img/main/footer_kylogo.gif"></div>
+            <div class="copyright">COPYRIGHT © 금영그룹(Keumyoung Group Co., Ltd) ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="../assets/js/core/jquery.appear.min.js"></script>
+<script src="../assets/js/core/jquery.countTo.min.js"></script>
+<script src="../assets/js/core/jquery.placeholder.min.js"></script>
+<script src="../assets/js/core/js.cookie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>금영그룹 > 고객지원</title>
+
+    <meta name="description" content="금영그룹">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Bootstrap and OneUI CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <script type="text/javascript">
+        var map, markTitle;
+        <!--var mapLap = $j("#map_lap");-->
+
+        $j(document).ready(function(){
+            $j(".daum_map_view").bind("click", function (e) {
+                $j("#map_lap").css("top", e.pageY+20).css("left", e.pageX-620);
+                markTitle = $j(this).attr("title");
+                addr2map.pingSearch($j(this).attr("alt"));
+            }).css("cursor","pointer");
+
+            // 맵 닫기 버튼
+            $j("#map_close").bind("click", function () {
+                $j("#map_lap").hide();
+            }).css("cursor","pointer");
+
+            // 맵 생성
+            map = new DMap("map", {reduce_scale:true, level:2, zindex:100 ,width:600, height:400});
+            map.addControl(new DZoomControl());
+        });
+
+        // 맵 위치 바꾸기
+        function setMap(lat, lng) {
+
+            var point = new DLatLng(lat, lng);
+            var mark = new DMark(point, {infowindow:new DInfoWindow(markTitle), draggable:false});
+
+            map.clearOverlay();
+            map.addOverlay(mark);
+            map.setCenter(point, 2);
+
+            $j("#map_lap").show();
+        }
+
+        // 주소 변환 callback
+        function setSearch(z) {
+            // 결과값이 하나 이상이라면 첫번째 맵 주소를 보여준다
+            if(z.channel.item.length > 0 )
+                setMap(z.channel.item[0].point_y, z.channel.item[0].point_x, markTitle);
+            // 결과 값이 없다면
+            else
+                alert('위치정보가 부정확 합니다.');
+        }
+
+        // 주소 변환 obj
+        var addr2map = {
+            apikey: "f33bc2d4b12199c0d50fd73bc77db4582c990e1d",
+            title: "",
+
+            // 검색을 요청하는 함수
+           /* pingSearch : function(addr, title)
+            {
+                if (addr)
+                {
+                    addr2map.title = addr2map;
+                    addr2map.s = document.createElement('script');
+                    addr2map.s.type ='text/javascript';
+                    addr2map.s.charset ='utf-8';
+                    addr2map.s.src = 'https://apis.daum.net/local/geo/addr2coord?apikey=' + addr2map.apikey + '&output=json&q=' + encodeURI(addr);
+                    document.getElementsByTagName('head')[0].appendChild(addr2map.s);
+                }
+            }*/
+        };
+    </script>
+    <!-- 다음 맵 -->
+</head>
+<body>
+<div id="page-container">
+
+
+    <!-- Header -->
+    <header id="header-navbar">
+        <div class="top_header">
+            <div class="top_gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">CUG</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top_gnb_menu">
+            <div class="menu">
+                <div class="logo"><img src="../img/main/top_logo.gif"></div>
+                <div class="menu_btn">
+                    <ul>
+                        <li>기업소개</li>
+                        <li>사업영역</li>
+                        <li>제품소개</li>
+                        <li>고객지원</li>
+                        <li>인재채용</li>
+                    </ul>
+                </div>
+                <div class="share_btn">
+                    <ul>
+                        <li><img src="../img/main/top_facebook_btn.gif"></li>
+                        <li><img src="../img/main/top_twitter_btn.gif"></li>
+                        <li><img src="../img/main/top_naverblog_btn.gif"></li>
+                        <li><img src="../img/main/top_instagram_btn.gif"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_line">
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+
+
+        <!-- 가운데 컨텐츠 -->
+        <div class="container">
+            <div class="left_menu">
+                <div class="left_title">
+                    고객지원
+                </div>
+                <div class="menu_gnb">
+                    <ul class="step1">
+                        <li class="te"><a href="cs_use_guide.html"><strong>고객서비스센터</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="cs_use_guide.html">- 이용방법</a></li>
+                                <li><a href="cs_treat_standard.html">- A/S 처리기준</a></li>
+                                <li><a href="cs_location.html">- 센터위치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_info.html"><strong>고객의 소리</strong></a></li>
+                        <li><a href="cs_write_idea.html"><strong>아이디어제안</strong></a></li>
+                        <li><a href="faq_list.html"><strong>자주 묻는 질문</strong></a></li>
+                        <li><a href="notice_list.html"><strong>고객지원 소식</strong></a></li>
+                        <li><a href="karaoke_search_list.html"><strong>노래방 검색</strong></a></li>
+                        <li><a href="new_poster.html"><strong>반주기 자료실</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="new_poster.html">- 신곡포스터 / 속지 / 애창곡</a></li>
+                                <li><a href="acc_archive_tech_list.html">- 기술지</a></li>
+                                <li><a href="acc_archive_prdmanual_list.html">- 제품설명서</a></li>
+                                <li><a href="acc_archive_proupdate_list.html">- 프로그램 업데이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agent_info_list.html"><strong>대리점 정보</strong></a></li>
+                        <li><a href="foundation_start_01.html"><strong>창업안내</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="foundation_start_01.html">- 창업준</a></li>
+                                <li><a href="foundation_inquiry_write.html">- 창업문의</a></li>
+                                <li><a href="success_story_0101.html">- 성공업소사례</a></li>
+                                <li><a href="related_rules_list.html">- 관련법률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="refuge_info_reg.html"><strong>피난안내영상물 등록</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Contents -->
+            <div class="main_contents" id="Contents">
+                <div class="contents_title">아이디어제안</div>
+                <div class="txt"></div>
+                <!-- ♡♡Memo --> <!-- 컨텐츠영역 width는 680px 입니다 -->
+                <!-- 컨텐츠비주얼이미지 -->
+                <div class="cva cva_cs">
+                    <img src="http://www.kumyoung.co.kr/img/support/cva_cs_idea.gif" alt="고객님의 소중한 아이디어 감사합니다..">
+                    <p class="cva_go"><a href="faq_list.asp"><img src="http://www.kumyoung.co.kr/img/support/ca_go_faq.gif" alt="자주 묻는 질문 /  원하는 답변을 손쉽게 찾으세요~"></a></p>
+                </div>
+                <!-- //컨텐츠비주얼이미지 -->
+
+                <div class="reg_agreeBox reg_agreeBox_end">
+                    <h4><img src="http://www.kumyoung.co.kr/img/support/tit_agree.gif" alt="개인정보 수집동의서"></h4>
+                    <div class="memo"><div class="memo2">
+
+                        <p><br>
+                            '(주)금영그룹'은 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호" 에 관한 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다. <br>
+                            <br>
+                            회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. </p>
+                        <p>본 방침은 : 2008 년 10 월 30 일 부터 시행됩니다. (개인정보취급방침 버전번호 : 1.00) </p>
+
+                        <p><br>
+                            (주)금영그룹의 개인정보 보호정책은 아래와 같습니다. </p>
+                        <p>1. 수집하는 개인정보 항목<br>
+                            2. 개인정보의 수집 및 이용목적<br>
+                            3. 개인정보의 보유 및 이용기간<br></p>
+                        <p><br>
+                            <strong>1.수집하는 개인정보 항목</strong><br>
+                            회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다. <br>
+                            1) 수집항목<br>
+                            ① 필수항목<br>
+                            ο 이름, 휴대전화번호, 이메일, 문의 내용 <br>
+
+                            ② 선택정보 - 전화번호<br>
+                            2) 개인정보 수집방법 : 홈페이지 채용정보 <br></p>
+                        <p><br>
+                            <strong>2. 개인정보의 수집 및 이용목적 </strong><br>
+                            회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다. <br>
+                            ο 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지, 접수 의사 확인, 불만처리 등 민원처리 <br>
+                        <p><br>
+                            <strong>3. 개인정보의 보유 및 이용기간 </strong><br>
+                            회원의 개인정보는 회사가 회원에게 서비스를 제공하는 기간 동안에 보유 및 이용됩니다. 단, 회사는 관계법령 및 정부기관의 개인정보취급방침에 따라 회원의 개인정보를 아래와 같은 사유로 일정기간 동안 보존합니다. 회사는 개인정보취급방침 이외의 목적으로, 회원의 개인정보 보유기록을 이용하지 않습니다.<br>
+                            ο 관계법령에 의한 개인정보 보존기간 <br>
+                            - 소비자의 불만 또는 분쟁처리에 관한 정보기록. 보존기간: 3년(전자상거래등에서의 소비자보호에 관한 법률) <br>
+                            - 신용정보의 수집/처리 및 이용 등에 관한 기록. 보존기간: 3년(신용정보의 이용 및 보호에 관한 법률) <br></p>
+
+                    </div></div>
+                </div>
+                <!-- 알림 -->
+                <div class="txt_l">
+                    <input type="checkbox" name="agree2" id="agree2"> <label for="agree"> 금영홈페이지 개인정보 수집동의서에 동의합니다.</label>
+                    <a href="http://218.38.77.72:8080" target="_blank"><img src="http://www.kumyoung.co.kr/img/support/partnerIdea.png" style="position:absolute; left:560px; top:403px;"></a>
+                </div>
+                <div>
+                    <p><h1>&nbsp;</h1></p>
+                </div>
+
+                <!-- 게시판글쓰기 -->
+                <form name="userForm" id="userForm" action="https://www.keumyoung.kr:444/support/ac_cs_write.asp" method="post"-->
+                    <div class="bbs_write">
+                        <table cellpadding="0" cellspacing="0" border="0" width="680" summary="고객의 소리 글쓰기입니다">
+                            <caption>고객의 소리 글쓰기</caption>
+                            <colgroup>
+                                <col style="width:90px; *width:65px;">
+                                <col style="width:590px; *width:565px;">
+                            </colgroup>
+
+                            <tbody>
+                            <tr class="head_top">
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_inquire_type.gif" alt="문의유형"></th>
+                                <td>
+                                    <select name="cat1" id="cat1" title="문의유형1" class="select110">
+
+                                        <option value="1" >반주기/주변기기</option>
+
+                                        <option value="2" >인터넷/뉴미디어</option>
+
+                                        <option value="7" SELECTED>아이디어제안</option>
+
+                                        <option value="11" >기타</option>
+
+                                    </select> &nbsp;
+                                    <select name="cat2" id="cat2" title="" class="select110_1">
+                                        <option value="">--------------------</option>
+
+                                        <option value="33" SELECTED>아이디어제안</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="bg_color">
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_writer.gif" alt="작성자"></th>
+                                <td><input type="text" id="user_name" name="user_name" title="작성자" class="input110"  maxlength="10"></td>
+                            </tr>
+
+                            <tr>
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_email_kr.gif" alt="이메일"></th>
+                                <td>
+                                    <input type="text" name="email_front" id="email_front" title="이메일 앞" class="input125" maxlength="24">
+                                    <span>@</span>
+                                    <input type="text" name="email_end" id="email_end" title="이메일 뒤" class="input125" maxlength="25">
+                                    <select name="email_type" id="email_type" title="이메일 자동선택" class="select120">
+                                        <option value="">직접입력</option> &nbsp;
+
+                                        <option value="chol.com">chol.com</option>
+
+                                        <option value="dreamwiz.com">dreamwiz.com</option>
+
+                                        <option value="empal.com">empal.com</option>
+
+                                        <option value="empas.com">empas.com</option>
+
+                                        <option value="hanafos.com">hanafos.com</option>
+
+                                        <option value="hanmail.net">hanmail.net</option>
+
+                                        <option value="hanmir.com">hanmir.com</option>
+
+                                        <option value="hotmail.com">hotmail.com</option>
+
+                                        <option value="korea.com">korea.com</option>
+
+                                        <option value="lycos.co.kr">lycos.co.kr</option>
+
+                                        <option value="nate.com">nate.com</option>
+
+                                        <option value="naver.com">naver.com</option>
+
+                                        <option value="netian.com">netian.com</option>
+
+                                        <option value="paran.com">paran.com</option>
+
+                                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+
+                                        <option value="gmail.com">gmail.com</option>
+
+                                        <option value="daum.net">daum.net</option>
+
+                                        <option value="hitel.net">hitel.net</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr class="bg_color">
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_home_tel.gif" alt="집전화"></th>
+                                <td>
+                                    <select title="집전화1" name="phone1" class="select55">
+
+                                        <option value="02">02</option>
+
+                                        <option value="031">031</option>
+
+                                        <option value="032">032</option>
+
+                                        <option value="033">033</option>
+
+                                        <option value="041">041</option>
+
+                                        <option value="042">042</option>
+
+                                        <option value="043">043</option>
+
+                                        <option value="051">051</option>
+
+                                        <option value="052">052</option>
+
+                                        <option value="053">053</option>
+
+                                        <option value="054">054</option>
+
+                                        <option value="055">055</option>
+
+                                        <option value="061">061</option>
+
+                                        <option value="062">062</option>
+
+                                        <option value="063">063</option>
+
+                                        <option value="064">064</option>
+
+                                        <option value="070">070</option>
+
+                                    </select> <span>-</span>
+                                    <input type="text" title="집전화2" name="phone2" id="phone2" class="input75" maxlength="4"> <span>-</span>
+                                    <input type="text" title="집전화3" name="phone3" id="phone3"  class="input75" maxlength="4">
+                                </td>
+                            </tr>
+
+                            <tr class="line2">
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_hp.gif" alt="휴대전화"></th>
+                                <td>
+                                    <div class="hp_input">
+                                        <select name="cell1" title="휴대전화1" class="select55">
+
+                                            <option value="010">010</option>
+
+                                            <option value="011">011</option>
+
+                                            <option value="016">016</option>
+
+                                            <option value="017">017</option>
+
+                                            <option value="018">018</option>
+
+                                            <option value="019">019</option>
+
+                                        </select> <span>-</span>
+                                        <input type="text" name="cell2" id="cell2" title="휴대전화2" class="input75" maxlength="4"> <span>-</span>
+                                        <input type="text" name="cell3" id="cell3" title="휴대전화3" class="input75" maxlength="4">
+                                    </div>
+                                    <dl class="sms_agree">
+                                        <dt><input type="checkbox" name="is_sms" id="is_sms" value="Y"> <label for="sms_agree">SMS 수신여부</label></dt>
+                                        <dd class="text_opt01">체크하시면 답변여부를 SMS로 알려드립니다.</dd>
+                                    </dl>
+                                </td>
+                            </tr>
+
+                            <tr class="bg_color">
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_list_title.gif" alt="제목"></th>
+                                <td><input type="text" name="subject" id="subject" title="제목" class="input510" maxlength="80"></td>
+                            </tr>
+
+                            <tr class="line_textarea">
+                                <th><img src="http://www.kumyoung.co.kr/img/bbs/th_memo.gif" alt="내용"></th>
+                                <td><textarea title="내용" name="content" id="content" cols="40" rows="5" class="textarea510"></textarea></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //게시판글쓰기 -->
+
+                    <!-- 버튼 -->
+                    <div class="btn_r"><a href="javascript:document.userForm.reset();"><img src="http://www.kumyoung.co.kr/img/b/btn_cancel.gif" alt="취소하기"></a><img src="http://www.kumyoung.co.kr/img/b/btn_send.gif" id="btn_send" alt="보내기"></div>
+                    <!-- //버튼 -->
+                    <!-- //♡♡Memo -->
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    <!-- Footer -->
+    <footer id="page-footer" class="page-footer">
+        <div class="footer_text">
+            <ul>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">회사위치/연락처</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">대리점안내</a>
+                </li>
+                <li>
+                    <a href="#">반주기 피난안내 영상물 등록</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="footer_main">
+            <div class="kylogo"><img src="../img/main/footer_kylogo.gif"></div>
+            <div class="copyright">COPYRIGHT © 금영그룹(Keumyoung Group Co., Ltd) ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="../assets/js/core/jquery.appear.min.js"></script>
+<script src="../assets/js/core/jquery.countTo.min.js"></script>
+<script src="../assets/js/core/jquery.placeholder.min.js"></script>
+<script src="../assets/js/core/js.cookie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+    });
+</script>
+</body>
+</html>

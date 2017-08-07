@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>금영그룹 > 고객지원</title>
+
+    <meta name="description" content="금영그룹">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Bootstrap and OneUI CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/support.css">
+
+    <script type="text/javascript">
+
+        $j(document).ready(function(){
+            // left menu
+            var lnbImgId = "lnb_support_faq";
+            //var tmpLnb = $j(lnbImgId).attr("src").value;
+            //alert($j(lnbImgId).attr(""));
+            //$j(lnbImgId).attr("src", tmpLnb[0] + "_on" + tmpLnb[1]);
+            //console.log('fdsa');
+
+            // 입력
+            $j("#btn_send").click(function () {
+                if($j("#auth_char").val().length < 1){
+                    alert("인증번호를 입력해 주십시요.");
+                    $j("#auth_char").focus();
+                    return;
+                }else{
+                    $j("#userForm").submit();
+                }
+            }).css("cursor","pointer");
+
+            // 입력 형식 지정
+            $j("#cell2").numeric(null);
+            $j("#cell3").numeric(null);
+            $j("#auth_char").numeric(null);
+            // sms 받기
+            $j("#btnSMS").click(function () {
+                $j.post("ac_send_sms.asp", $j("#userForm").serialize(),
+                    function(data){
+                        if (data == '1') {
+                            alert("인증번호가 발송되었습니다.");
+                        }
+                        else if (data == '2') {
+                            alert("폰 인증이 완료되었습니다.");
+                            window.close();
+                            opener.location.reload();
+                        }
+                        else if (data == '-1') {
+                            alert("입력하신 인증번호가 틀립니다. 다시 입력해주세요.");
+                        }
+                        else if (data == '-2') {
+                            alert("폰번호를 입력하신 후 인증번호 버튼을 눌러주세요.");
+                        }
+                        else if (data == '-3') {
+                            alert("이미 인증번호가 발송되었습니다. 입력제한시간은 5분입니다.");
+                        }
+                        else if (data == '-4') {
+                            alert("다른 사용자가 인증받는 폰번호로 변경할 수 없습니다.");
+                        }
+                        else if (data == '0')
+                            alert("요청하신 폰 인증을 처리할 수 없습니다. 새로고침후 다시 인증번호를 다시 받아주시기 바랍니다.");
+                        else if (data == '-99')
+                            alert("DB 에러입니다. 다시 시도해 주십시요");
+                        else
+                            alert(data);
+                    }, "text");
+            }).css("cursor","pointer");
+        });
+    </script>
+</head>
+<body>
+<div id="page-container">
+
+
+    <!-- Header -->
+    <header id="header-navbar">
+        <div class="top_header">
+            <div class="top_gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">CUG</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top_gnb_menu">
+            <div class="menu">
+                <div class="logo"><img src="../img/main/top_logo.gif"></div>
+                <div class="menu_btn">
+                    <ul>
+                        <li>기업소개</li>
+                        <li>사업영역</li>
+                        <li>제품소개</li>
+                        <li>고객지원</li>
+                        <li>인재채용</li>
+                    </ul>
+                </div>
+                <div class="share_btn">
+                    <ul>
+                        <li><img src="../img/main/top_facebook_btn.gif"></li>
+                        <li><img src="../img/main/top_twitter_btn.gif"></li>
+                        <li><img src="../img/main/top_naverblog_btn.gif"></li>
+                        <li><img src="../img/main/top_instagram_btn.gif"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_line">
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+
+
+        <!-- 가운데 컨텐츠 -->
+        <div class="container">
+            <div class="left_menu">
+                <div class="left_title">
+                    고객지원
+                </div>
+                <div class="menu_gnb">
+                    <ul class="step1">
+                        <li class="te"><a href="cs_use_guide.html"><strong>고객서비스센터</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="cs_use_guide.html">- 이용방법</a></li>
+                                <li><a href="cs_treat_standard.html">- A/S 처리기준</a></li>
+                                <li><a href="cs_location.html">- 센터위치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_info.html"><strong>고객의 소리</strong></a></li>
+                        <li><a href="cs_write_idea.html"><strong>아이디어제안</strong></a></li>
+                        <li><a href="faq_list.html"><strong>자주 묻는 질문</strong></a></li>
+                        <li><a href="notice_list.html"><strong>고객지원 소식</strong></a></li>
+                        <li><a href="karaoke_search_list.html"><strong>노래방 검색</strong></a></li>
+                        <li><a href="new_poster.html"><strong>반주기 자료실</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="new_poster.html">- 신곡포스터 / 속지 / 애창곡</a></li>
+                                <li><a href="acc_archive_tech_list.html">- 기술지</a></li>
+                                <li><a href="acc_archive_prdmanual_list.html">- 제품설명서</a></li>
+                                <li><a href="acc_archive_proupdate_list.html">- 프로그램 업데이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agent_info_list.html"><strong>대리점 정보</strong></a></li>
+                        <li><a href="foundation_start_01.html"><strong>창업안내</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="foundation_start_01.html">- 창업준비</a></li>
+                                <li><a href="foundation_inquiry_write.html">- 창업문의</a></li>
+                                <li><a href="success_story_0101.html">- 성공업소사례</a></li>
+                                <li><a href="related_rules_list.html">- 관련법률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="refuge_info_reg.html"><strong>피난안내영상물 등록</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Contents -->
+            <div class="main_contents" id="Contents">
+                <div class="contents_title">피난안내영상물 등록</div>
+                <div class="txt"></div>
+                <!-- ♡♡Memo --> <!-- 컨텐츠영역 width는 680px 입니다 -->
+                <div class="refuge_info_box01"><img src="http://www.kumyoung.co.kr/img/support/cva_refuge_info_reg01.gif" alt="노래방 등의 시설에서는  반주기 화면에 위급상황시 피난 안내 화면 표출이 의무화 되었습니다."></div>
+
+
+                <div class="refuge_reg_input">
+                    <table cellpadding="0" cellspacing="0" border="0" summary="피난안내영상물 등록 폼입니다">
+                        <caption>피난안내영상물 등록 폼</caption>
+                        <colgroup>
+                            <col style="width:90px;">
+                            <col style="width:175px;">
+                            <col style="">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th><img src="http://www.kumyoung.co.kr/img/support/txt_hp_num.gif" alt="휴대폰번호"></th>
+                            <td>
+                                <select name="cell1" id="cell1" class="select50">
+
+                                    <option value="010">010</option>
+
+                                    <option value="011">011</option>
+
+                                    <option value="016">016</option>
+
+                                    <option value="017">017</option>
+
+                                    <option value="018">018</option>
+
+                                    <option value="019">019</option>
+
+                                </select> -
+                                <input type="text" name="cell2" id="cell2" title="휴대전화번호 앞" maxlength="4" class="input45 acenter"> -
+                                <input type="text" name="cell3" id="cell3" title="휴대전화번호 뒤" maxlength="4" class="input45 acenter">
+                            </td>
+                            <td class="last"><img src="http://www.kumyoung.co.kr/img/b/btn_test_num.gif" id="btnSMS" alt="인증번호 받기"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="http://www.kumyoung.co.kr/img/support/txt_test_num.gif" alt="인증번호"></th>
+                            <td><input type="password" name="auth_char" id="auth_char" title="인증번호" maxlength="5" class="input164 acenter"></td>
+                            <td><img src="http://www.kumyoung.co.kr/img/b/btn_login_refuge.gif" id="btn_send"  alt="로그인"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="refuge_login_info"><img src="http://www.kumyoung.co.kr/img/support/refuge_login_info.gif" alt="휴대폰 번호를 입력하고 아래 인증번호받기를 누르세요. / 휴대폰으로 전송된 인증번호를 입력하고 로그인 하세요. / 재방문 시에는 이미 받는 인증번호로 로그인 하셔도 됩니다"></div>
+                </div>
+
+                <div class="refuge_info_box02">
+                    <img src="http://www.kumyoung.co.kr/img/support/refuge_ex_img.gif" alt="예시화면">
+                </div>
+                <p class="refuge_info_guide"><img src="http://www.kumyoung.co.kr/img/support/refuge_info_guide1.png" alt="노래반주기 피난안내 영상물 등록 도움말"></p>
+                <!-- //♡♡Memo -->
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    <!-- Foter -->
+    <footer id="page-footer" class="page-footer">
+        <div class="footer_text">
+            <ul>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">회사위치/연락처</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">대리점안내</a>
+                </li>
+                <li>
+                    <a href="#">반주기 피난안내 영상물 등록</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="footer_main">
+            <div class="kylogo"><img src="../img/main/footer_kylogo.gif"></div>
+            <div class="copyright">COPYRIGHT © 금영그룹(Keumyoung Group Co., Ltd) ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="../assets/js/core/jquery.appear.min.js"></script>
+<script src="../assets/js/core/jquery.countTo.min.js"></script>
+<script src="../assets/js/core/jquery.placeholder.min.js"></script>
+<script src="../assets/js/core/js.cookie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+    });
+</script>
+</body>
+</html>

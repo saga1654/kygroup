@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>금영그룹 > 고객지원</title>
+
+    <meta name="description" content="금영그룹">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Bootstrap and OneUI CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/support.css">
+
+    <script type="text/javascript">
+        $j(document).ready(function() {
+            $j().piroBox({
+                my_speed: 300, //animation speed
+                bg_alpha: 0.5, //background opacity
+                radius: 4, //caption rounded corner
+                pirobox_next : 'piro_next', // Nav buttons -> piro_next == inside piroBox , piro_next_out == outside piroBox
+                pirobox_prev : 'piro_prev',// Nav buttons -> piro_prev == inside piroBox , piro_prev_out == outside piroBox
+                close_all : '.piro_close',// add class .piro_overlay(with comma)if you want overlay click close piroBox
+                slideShow : 'slideshow', // just delete slideshow between '' if you don't want it.
+                slideSpeed : 3 //slideshow duration in seconds(3 to 6 Recommended)
+            });
+        });
+
+    </script>
+    <script language="javascript">
+
+        $j(document).ready(function(){
+
+            // left menu
+            var lnbImgId = "lnb_support_faq";
+            //var tmpLnb = $j(lnbImgId).attr("src").value;
+            //alert($j(lnbImgId).attr(""));
+            //$j(lnbImgId).attr("src", tmpLnb[0] + "_on" + tmpLnb[1]);
+
+            // 검색
+            $j("#searchBBS").submit(function(){
+                return chkSearch();
+            });
+
+            // 검색어 체크
+//			$j("#sBtn").click(function () {
+//				chkSearch();
+//			}).css("cursor","pointer");
+
+            $j("#sBtn").click(function() {
+                $j("#searchBBS").trigger("submit");
+            }).css("cursor","pointer");
+        });
+
+        function chkSearch(){
+            if($j.trim($j("#sVal").val()).length < 1) {
+                alert("검색어를 입력 하세요.");
+                $j("#sVal").focus();
+                return false;
+            } else {
+                if( !chkSearchWord($j("#sVal").val()) ){
+                    $j("#sVal").focus();
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="page-container">
+
+
+    <!-- Header -->
+    <header id="header-navbar">
+        <div class="top_header">
+            <div class="top_gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">CUG</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top_gnb_menu">
+            <div class="menu">
+                <div class="logo"><img src="../img/main/top_logo.gif"></div>
+                <div class="menu_btn">
+                    <ul>
+                        <li>기업소개</li>
+                        <li>사업영역</li>
+                        <li>제품소개</li>
+                        <li>고객지원</li>
+                        <li>인재채용</li>
+                    </ul>
+                </div>
+                <div class="share_btn">
+                    <ul>
+                        <li><img src="../img/main/top_facebook_btn.gif"></li>
+                        <li><img src="../img/main/top_twitter_btn.gif"></li>
+                        <li><img src="../img/main/top_naverblog_btn.gif"></li>
+                        <li><img src="../img/main/top_instagram_btn.gif"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_line">
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+
+
+        <!-- 가운데 컨텐츠 -->
+        <div class="container">
+            <div class="left_menu">
+                <div class="left_title">
+                    고객지원
+                </div>
+                <div class="menu_gnb">
+                    <ul class="step1">
+                        <li class="te"><a href="cs_use_guide.html"><strong>고객서비스센터</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="cs_use_guide.html">- 이용방법</a></li>
+                                <li><a href="cs_treat_standard.html">- A/S 처리기준</a></li>
+                                <li><a href="cs_location.html">- 센터위치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_info.html"><strong>고객의 소리</strong></a></li>
+                        <li><a href="cs_write_idea.html"><strong>아이디어제안</strong></a></li>
+                        <li><a href="faq_list.html"><strong>자주 묻는 질문</strong></a></li>
+                        <li><a href="notice_list.html"><strong>고객지원 소식</strong></a></li>
+                        <li><a href="karaoke_search_list.html"><strong>노래방 검색</strong></a></li>
+                        <li><a href="new_poster.html"><strong>반주기 자료실</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="new_poster.html">- 신곡포스터 / 속지 / 애창곡</a></li>
+                                <li><a href="acc_archive_tech_list.html">- 기술지</a></li>
+                                <li><a href="acc_archive_prdmanual_list.html">- 제품설명서</a></li>
+                                <li><a href="acc_archive_proupdate_list.html">- 프로그램 업데이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agent_info_list.html"><strong>대리점 정보</strong></a></li>
+                        <li><a href="foundation_start_01.html"><strong>창업안내</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="foundation_start_01.html">- 창업준</a></li>
+                                <li><a href="foundation_inquiry_write.html">- 창업문의</a></li>
+                                <li><a href="success_story_0101.html">- 성공업소사례</a></li>
+                                <li><a href="related_rules_list.html">- 관련법률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="refuge_info_reg.html"><strong>피난안내영상물 등록</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Contents -->
+            <div class="main_contents" id="Contents">
+                <div class="contents_title">노래방 검색</div>
+                <div class="txt"></div>
+                <!-- ♡♡Memo --> <!-- 컨텐츠영역 width는 680px 입니다 -->
+                <!-- 탭메뉴 -->
+                <ul id="tab_national_kara">
+                    <li class="nkara01_on"><a href="karaoke_search_list.asp?area=%BC%AD%BF%EF%BD%C3" title="서울시" onfocus="this.blur();">서울시</a></li>
+                    <li class="nkara02"><a href="karaoke_search_list.asp?area=%B0%E6%B1%E2%B5%B5" title="경기도" onfocus="this.blur();">경기도</a></li>
+                    <li class="nkara03"><a href="karaoke_search_list.asp?area=%C0%CE%C3%B5%BD%C3" title="인천시" onfocus="this.blur();">인천시</a></li>
+                    <li class="nkara04"><a href="karaoke_search_list.asp?area=%BF%EF%BB%EA%BD%C3" title="울산시" onfocus="this.blur();">울산시</a></li>
+                    <li class="nkara05"><a href="karaoke_search_list.asp?area=%B4%EB%C0%FC%BD%C3" title="대전시" onfocus="this.blur();">대전시</a></li>
+                    <li class="nkara06"><a href="karaoke_search_list.asp?area=%B1%A4%C1%D6%BD%C3" title="광주시" onfocus="this.blur();">광주시</a></li>
+                    <li class="nkara07"><a href="karaoke_search_list.asp?area=%B4%EB%B1%B8%BD%C3" title="대구시" onfocus="this.blur();">대구시</a></li>
+                    <li class="nkara08"><a href="karaoke_search_list.asp?area=%BA%CE%BB%EA%BD%C3" title="부산시" onfocus="this.blur();">부산시</a></li>
+                    <li class="nkara09"><a href="karaoke_search_list.asp?area=%C3%E6%C3%BB%BA%CF%B5%B5" title="충청북도" onfocus="this.blur();">충청북도</a></li>
+                    <li class="nkara10"><a href="karaoke_search_list.asp?area=%C3%E6%C3%BB%B3%B2%B5%B5" title="충청남도" onfocus="this.blur();">충청남도</a></li>
+                    <li class="nkara11"><a href="karaoke_search_list.asp?area=%C0%FC%B6%F3%BA%CF%B5%B5" title="전라북도" onfocus="this.blur();">전라북도</a></li>
+                    <li class="nkara12"><a href="karaoke_search_list.asp?area=%C0%FC%B6%F3%B3%B2%B5%B5" title="전라남도" onfocus="this.blur();">전라남도</a></li>
+                    <li class="nkara13"><a href="karaoke_search_list.asp?area=%B0%E6%BB%F3%BA%CF%B5%B5" title="경상북도" onfocus="this.blur();">경상북도</a></li>
+                    <li class="nkara14"><a href="karaoke_search_list.asp?area=%B0%E6%BB%F3%B3%B2%B5%B5" title="경상남도" onfocus="this.blur();">경상남도</a></li>
+                    <li class="nkara15"><a href="karaoke_search_list.asp?area=%B0%AD%BF%F8%B5%B5" title="강원도" onfocus="this.blur();">강원도</a></li>
+                    <li class="nkara16"><a href="karaoke_search_list.asp?area=%C1%A6%C1%D6%B5%B5" title="제주도" onfocus="this.blur();">제주도</a></li>
+                </ul>
+                <!-- //탭메뉴 -->
+                <div class="clear"></div>
+
+                <!-- 지역구리스트 -->
+                <ul class="region_list">
+                    <!--li class="on"><a href="karaoke_search_list.asp">강서구</a></li>
+                    <li><a href="karaoke_search_list.asp">서대문구</a></li-->
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=강남구">강남구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=강동구">강동구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=강북구">강북구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=강서구">강서구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=관악구">관악구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=광진구">광진구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=구로구">구로구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=금천구">금천구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=노원구">노원구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=도봉구">도봉구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=동대문구">동대문구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=동작구">동작구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=마포구">마포구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=서대문구">서대문구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=서초구">서초구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=성동구">성동구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=성북구">성북구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=송파구">송파구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=양천구">양천구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=영등포구">영등포구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=용산구">용산구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=은평구">은평구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=종로구">종로구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=중구">중구</a></li>
+
+
+                    <li class=""><a href="karaoke_search_list.asp?area=서울시&addr2=중랑구">중랑구</a></li>
+
+                    <li class="none">&nbsp;</li>
+
+                    <li class="none">&nbsp;</li>
+
+                    <li class="none">&nbsp;</li>
+
+                    <li class="none">&nbsp;</li>
+
+                    <li class="none">&nbsp;</li>
+
+                    <li class="none">&nbsp;</li>
+
+                    <li class="none">&nbsp;</li>
+
+                </ul>
+                <!-- //지역구리스트 -->
+                <div class="clear"></div>
+
+                <!-- 검색결과타이틀 -->
+                <div class="search_result_title">
+                    <div class="search_icon_info">
+                        <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt=""><img src="http://www.kumyoung.co.kr/img/bbs/txt_dodbogi.gif" alt="상세보기" class="item1">
+                        <img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt=""><img src="http://www.kumyoung.co.kr/img/bbs/txt_map_view.gif" alt="약도보기" class="item1">
+                        <img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt=""><img src="http://www.kumyoung.co.kr/img/bbs/txt_info_adjust.gif" alt="정보수정" class="item1"-->
+                    </div>
+                    <div class="search_result_memo">
+                        <img src="http://www.kumyoung.co.kr/img/i/icon_mark01.gif" alt="">&nbsp;
+                        서울시&nbsp;
+                        <img src="http://www.kumyoung.co.kr/img/support/txt_search_result_total.gif" alt="의 검색결과는 총">
+                        2693 <img src="http://www.kumyoung.co.kr/img/support/txt_ea_ipnida.gif" alt="개 입니다.">
+                    </div>
+                </div>
+                <!-- 검색결과타이틀 -->
+
+                <!-- 게시판목록 -->
+                <div class="bbs_view">
+                    <table cellpadding="0" cellspacing="0" border="0" width="680" summary="노래방 검색 목록입니다">
+                        <caption>노래방 검색</caption>
+                        <colgroup>
+                            <col style="width:150px; *width:125px;">
+                            <col style="width:420px; *width:395px;">
+                            <!--col style="width:110px; *width:85px;"-->
+                        </colgroup>
+
+                        <tbody>
+                        <!--tr class="head_top">
+                            <th class="first">강서강서강서강서강서노래방</th>
+                            <td>TEL : 02) 333-7501<br>ADDRESS : 서울 특별시 강서구 염창동염창동 152-35</td>
+                            <td class="last">
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="약도보기"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a>
+                            </td>
+                        </tr>
+                        <tr class="line2 bg_color">
+                            <th class="first">강서노래방</th>
+                            <td>TEL : 02) 333-7501<br>ADDRESS : 서울 특별시 강서구 염창동염창동염창동 152-35</td>
+                            <td class="last">
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="약도보기"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a>
+                            </td>
+                        </tr>
+                        <tr class="line2">
+                            <th class="first">강서노래방</th>
+                            <td>TEL : 02) 333-7501<br>ADDRESS : 서울 특별시 강서구 염창동 152-35</td>
+                            <td class="last">
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="약도보기"></a>
+                                <a href="#n"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a>
+                            </td>
+                        </tr-->
+
+                        <tr class="head_top">
+                            <th class="first">:씽씽노래방</th>
+                            <td>
+
+                                · 전화번호 : 02-512-5046
+                                <br>· 주소 : <span class="get_address">서울시 강남구 논현동167</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 논현동167" title=":씽씽노래방" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=33259&nm=:씽씽노래방', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th class="first">3d</th>
+                            <td>
+
+                                · 전화번호 : 02-569-7733
+                                <br>· 주소 : <span class="get_address">서울시 강남구 역사몽649-10</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 역사몽649-10" title="3d" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=20690&nm=3d', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2">
+                            <th class="first">가시노래방</th>
+                            <td>
+
+                                · 전화번호 : 02-546-0119
+                                <br>· 주소 : <span class="get_address">서울시 강남구 신사동 584번지</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 신사동 584번지" title="가시노래방" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=8581&nm=가시노래방', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th class="first">갤러리 노래방</th>
+                            <td>
+
+                                · 전화번호 : 02-547-2335
+                                <br>· 주소 : <span class="get_address">서울시 강남구 신사동 643-11</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 신사동 643-11" title="갤러리 노래방" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=16180&nm=갤러리 노래방', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2">
+                            <th class="first">골드노래방</th>
+                            <td>
+
+                                · 전화번호 : 02-583-1111
+                                <br>· 주소 : <span class="get_address">서울시 강남구 대치동897-33</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 대치동897-33" title="골드노래방" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=16829&nm=골드노래방', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th class="first">골든노래방</th>
+                            <td>
+
+                                · 전화번호 : 02-539-2339
+                                <br>· 주소 : <span class="get_address">서울시 강남구 대치4동 897-33</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 대치4동 897-33" title="골든노래방" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=338&nm=골든노래방', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2">
+                            <th class="first">골든벨노래방</th>
+                            <td>
+
+                                · 전화번호 : 02-3352-8835
+                                <br>· 주소 : <span class="get_address">서울시 강남구 대치동961</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 대치동961" title="골든벨노래방" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=2741&nm=골든벨노래방', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th class="first">국제음향</th>
+                            <td>
+
+                                · 전화번호 : 02-558-2360
+                                <br>· 주소 : <span class="get_address">서울시 강남구 역삼동796-13</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 역삼동796-13" title="국제음향" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=8014&nm=국제음향', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2">
+                            <th class="first">궁</th>
+                            <td>
+
+                                · 전화번호 : 2556-1500
+                                <br>· 주소 : <span class="get_address">서울시 강남구 대치동891-51</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 대치동891-51" title="궁" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=34880&nm=궁', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+                        <tr class="line2 bg_color">
+                            <th class="first">궁노래연습장</th>
+                            <td>
+
+                                · 전화번호 : 070-8129-4358
+                                <br>· 주소 : <span class="get_address">서울시 강남구 대치4동896</span></td>
+
+                            <!--td class="last"-->
+
+                            <!-- 실제 적용시 아래 코드 삭제 -->
+                            <!-- <a href="http://www.kumyoung.com/kym/image/kym_07_kumyoung.gif" class="pirobox"><img src="http://www.kumyoung.co.kr/img/bbs/icon_dodbogi.gif" alt="상세보기"></a> -->
+                            <!-- 끝 -->
+                            <!--img src="http://www.kumyoung.co.kr/img/bbs/icon_map_view.gif" alt="서울시 강남구 대치4동896" title="궁노래연습장" class="map_icon">
+                            <a href="javascript:open_popup('/support/pop_karaoke_modify.asp?id=17491&nm=궁노래연습장', 609, 454, 'no', 'karaoke')"><img src="http://www.kumyoung.co.kr/img/bbs/icon_info_adjust.gif" alt="정보수정"></a-->
+                            <!--/td-->
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //게시판목록 -->
+
+                <!-- Paging -->
+                <div id="pagingwrap">
+                    <div class="paging">
+                        <span><img src='/img/bbs/page_first.gif' alt='첫 페이지'></span><span><img src='/img/bbs/page_prev.gif' alt='이전 10 페이지'></span> <strong>1</strong> <a href="?page=2&amp;area=서울시&addr2=&sVar=&sVal=">2</a> <a href="?page=3&amp;area=서울시&addr2=&sVar=&sVal=">3</a> <a href="?page=4&amp;area=서울시&addr2=&sVar=&sVal=">4</a> <a href="?page=5&amp;area=서울시&addr2=&sVar=&sVal=">5</a> <a href="?page=6&amp;area=서울시&addr2=&sVar=&sVal=">6</a> <a href="?page=7&amp;area=서울시&addr2=&sVar=&sVal=">7</a> <a href="?page=8&amp;area=서울시&addr2=&sVar=&sVal=">8</a> <a href="?page=9&amp;area=서울시&addr2=&sVar=&sVal=">9</a> <a href="?page=10&amp;area=서울시&addr2=&sVar=&sVal=">10</a> <a href="?page=11&amp;area=서울시&addr2=&sVar=&sVal="><span><img src='/img/bbs/page_next.gif' alt='다음 10 페이지'></span></a><a href="?page=270&amp;area=서울시&addr2=&sVar=&sVal="><span><img src='/img/bbs/page_last.gif' alt='마지막 페이지'></span></a>
+                    </div>
+                </div>
+                <!-- //Paging -->
+
+                <!-- 게시판검색 -->
+                <div class="bbs_search">
+                    <form name="searchBBS" id="searchBBS" method="GET" action="karaoke_search_list.asp">
+                        <select name="area">
+                            <option value="all">전체</option>
+
+                            <option value="서울시" selected>서울시</option>
+
+                            <option value="인천시" >인천시</option>
+
+                            <option value="울산시" >울산시</option>
+
+                            <option value="대전시" >대전시</option>
+
+                            <option value="광주시" >광주시</option>
+
+                            <option value="대구시" >대구시</option>
+
+                            <option value="부산시" >부산시</option>
+
+                            <option value="경기도" >경기도</option>
+
+                            <option value="충청북도" >충청북도</option>
+
+                            <option value="충청남도" >충청남도</option>
+
+                            <option value="전라북도" >전라북도</option>
+
+                            <option value="전라남도" >전라남도</option>
+
+                            <option value="강원도" >강원도</option>
+
+                            <option value="경상북도" >경상북도</option>
+
+                            <option value="경상남도" >경상남도</option>
+
+                            <option value="제주도" >제주도</option>
+
+                        </select>
+                        <input type="text" id="sVal" name="sVal" class="input_bbs" title="키워드 입력" value="">
+                        <img id="sBtn" src="http://www.kumyoung.co.kr/img/b/btn_search_bbs.gif" alt="검색">
+                        <a href="karaoke_search_list.asp?area=all"><img src="http://www.kumyoung.co.kr/img/b/btn_whole_list.gif" alt="전체목록"></a>
+                    </form>
+
+                </div>
+                <!-- //게시판검색 -->
+                <!-- //♡♡Memo -->
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    <!-- Foter -->
+    <footer id="page-footer" class="page-footer">
+        <div class="footer_text">
+            <ul>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">회사위치/연락처</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">대리점안내</a>
+                </li>
+                <li>
+                    <a href="#">반주기 피난안내 영상물 등록</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="footer_main">
+            <div class="kylogo"><img src="../img/main/footer_kylogo.gif"></div>
+            <div class="copyright">COPYRIGHT © 금영그룹(Keumyoung Group Co., Ltd) ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="../assets/js/core/jquery.appear.min.js"></script>
+<script src="../assets/js/core/jquery.countTo.min.js"></script>
+<script src="../assets/js/core/jquery.placeholder.min.js"></script>
+<script src="../assets/js/core/js.cookie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+    });
+</script>
+</body>
+</html>

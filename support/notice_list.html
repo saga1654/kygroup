@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>금영그룹 > 고객지원</title>
+
+    <meta name="description" content="금영그룹">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Bootstrap and OneUI CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/support.css">
+
+    <script type="text/javascript">
+        $j(document).ready(function(){
+            // left menu
+            var lnbImgId = "lnb_support_faq";
+            //var tmpLnb = $j(lnbImgId).attr("src").value;
+            //alert($j(lnbImgId).attr(""));
+            //$j(lnbImgId).attr("src", tmpLnb[0] + "_on" + tmpLnb[1]);
+
+            // 검색
+            $j("#searchBBS").submit(function(){
+                return chkSearch();
+            });
+
+            // 검색어 체크
+//			$j("#sBtn").click(function () {
+//				chkSearch();
+//			}).css("cursor","pointer");
+
+            $j("#sBtn").click(function() {
+                $j("#searchBBS").trigger("submit");
+            }).css("cursor","pointer");
+        });
+
+        function chkSearch(){
+            if($j.trim($j("#sVal").val()).length < 1) {
+                alert("검색어를 입력 하세요.");
+                $j("#sVal").focus();
+                return false;
+            } else {
+                if( !chkSearchWord($j("#sVal").val()) ){
+                    $j("#sVal").focus();
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="page-container">
+
+
+    <!-- Header -->
+    <header id="header-navbar">
+        <div class="top_header">
+            <div class="top_gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">CUG</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top_gnb_menu">
+            <div class="menu">
+                <div class="logo"><img src="../img/main/top_logo.gif"></div>
+                <div class="menu_btn">
+                    <ul>
+                        <li>기업소개</li>
+                        <li>사업영역</li>
+                        <li>제품소개</li>
+                        <li>고객지원</li>
+                        <li>인재채용</li>
+                    </ul>
+                </div>
+                <div class="share_btn">
+                    <ul>
+                        <li><img src="../img/main/top_facebook_btn.gif"></li>
+                        <li><img src="../img/main/top_twitter_btn.gif"></li>
+                        <li><img src="../img/main/top_naverblog_btn.gif"></li>
+                        <li><img src="../img/main/top_instagram_btn.gif"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top_line">
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+
+
+        <!-- 가운데 컨텐츠 -->
+        <div class="container">
+            <div class="left_menu">
+                <div class="left_title">
+                    고객지원
+                </div>
+                <div class="menu_gnb">
+                    <ul class="step1">
+                        <li class="te"><a href="cs_use_guide.html"><strong>고객서비스센터</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="cs_use_guide.html">- 이용방법</a></li>
+                                <li><a href="cs_treat_standard.html">- A/S 처리기준</a></li>
+                                <li><a href="cs_location.html">- 센터위치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_info.html"><strong>고객의 소리</strong></a></li>
+                        <li><a href="cs_write_idea.html"><strong>아이디어제안</strong></a></li>
+                        <li><a href="faq_list.html"><strong>자주 묻는 질문</strong></a></li>
+                        <li><a href="notice_list.html"><strong>고객지원 소식</strong></a></li>
+                        <li><a href="karaoke_search_list.html"><strong>노래방 검색</strong></a></li>
+                        <li><a href="new_poster.html"><strong>반주기 자료실</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="new_poster.html">- 신곡포스터 / 속지 / 애창곡</a></li>
+                                <li><a href="acc_archive_tech_list.html">- 기술지</a></li>
+                                <li><a href="acc_archive_prdmanual_list.html">- 제품설명서</a></li>
+                                <li><a href="acc_archive_proupdate_list.html">- 프로그램 업데이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agent_info_list.html"><strong>대리점 정보</strong></a></li>
+                        <li><a href="foundation_start_01.html"><strong>창업안내</strong></a></li>
+                        <li>
+                            <ul class="step2">
+                                <li><a href="foundation_start_01.html">- 창업준</a></li>
+                                <li><a href="foundation_inquiry_write.html">- 창업문의</a></li>
+                                <li><a href="success_story_0101.html">- 성공업소사례</a></li>
+                                <li><a href="related_rules_list.html">- 관련법률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="refuge_info_reg.html"><strong>피난안내영상물 등록</strong></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Contents -->
+            <div class="main_contents" id="Contents">
+                <div class="contents_title">고객지원 소식</div>
+                <div class="txt"></div>
+                <!-- ♡♡Memo --> <!-- 컨텐츠영역 width는 680px 입니다 -->
+                <!-- 게시판목록 -->
+                <div class="bbs_list">
+                    <table cellpadding="0" cellspacing="0" border="0" width="680" summary="공지사항 게시판 목록입니다">
+                        <caption>공지사항 게시판 목록</caption>
+                        <colgroup>
+                            <col width="75px">
+                            <col width="395px">
+                            <col width="90px">
+                            <col width="105px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="first"><img src="http://www.kumyoung.co.kr/img/bbs/th_list_num.gif" alt="번호"></th>
+                            <th><img src="http://www.kumyoung.co.kr/img/bbs/th_list_title.gif" alt="제목"></th>
+                            <th><img src="http://www.kumyoung.co.kr/img/bbs/th_list_attfile.gif" alt="첨부파일"></th>
+                            <th><img src="http://www.kumyoung.co.kr/img/bbs/th_list_date.gif" alt="날짜"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <!--tr onMouseOver="this.style.backgroundColor='#F3F6F4'" onMouseOut="this.style.backgroundColor=''">
+                            <td>1009</td>
+                            <td class="memo"><a href="notice_view.asp">등록한 글의 제목입니다. 등록한 글의 제목입니다.</a> <img src="http://www.kumyoung.co.kr/img/i/icon_new.gif" alt="새글"></td>
+                            <td><img src="http://www.kumyoung.co.kr/img/i/icon_file.gif" alt=""></td>
+                            <td>2009.12.25</td>
+                        </tr-->
+
+                        <tr onMouseOver="this.style.backgroundColor='#F3F6F4'" onMouseOut="this.style.backgroundColor=''">
+                            <td>387</td>
+                            <td class="memo">
+                                <a href="notice_view.html">
+                                    2017년 9월 신곡 공급 적용 일정
+                                </a>
+                                <img src='http://www.kumyoung.co.kr/img/i/icon_new.gif' alt='새글'>
+                            </td>
+                            <td></td>
+                            <td>2017-08-07</td>
+                        </tr>
+
+                        <tr onMouseOver="this.style.backgroundColor='#F3F6F4'" onMouseOut="this.style.backgroundColor=''">
+                            <td>386</td>
+                            <td class="memo">
+                                <a href="notice_view.html">
+                                    금영그룹 하계휴가 안내
+                                </a>
+
+                            </td>
+                            <td></td>
+                            <td>2017-07-28</td>
+                        </tr>
+
+                        <tr onMouseOver="this.style.backgroundColor='#F3F6F4'" onMouseOut="this.style.backgroundColor=''">
+                            <td>385</td>
+                            <td class="memo">
+                                <a href="notice_view.html">
+                                    2017년 8월 신곡 공급 적용 일정
+                                </a>
+
+                            </td>
+                            <td></td>
+                            <td>2017-07-06</td>
+                        </tr>
+
+                        <tr onMouseOver="this.style.backgroundColor='#F3F6F4'" onMouseOut="this.style.backgroundColor=''">
+                            <td>384</td>
+                            <td class="memo">
+                                <a href="notice_view.html">
+                                    2017년 7월 신곡 공급 적용 일정
+                                </a>
+
+                            </td>
+                            <td></td>
+                            <td>2017-06-02</td>
+                        </tr>
+                        
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //게시판목록 -->
+
+                <!-- Paging -->
+                <div id="pagingwrap">
+                    <div class="paging">
+                        <span><img src='http://www.kumyoung.co.kr/img/bbs/page_first.gif' alt='첫 페이지'></span><span><img src='http://www.kumyoung.co.kr/img/bbs/page_prev.gif' alt='이전 10 페이지'></span> <strong>1</strong> <a href="?page=2&amp;seq=0&amp;sVar=&amp;sVal=">2</a> <a href="?page=3&amp;seq=0&amp;sVar=&amp;sVal=">3</a> <a href="?page=4&amp;seq=0&amp;sVar=&amp;sVal=">4</a> <a href="?page=5&amp;seq=0&amp;sVar=&amp;sVal=">5</a> <a href="?page=6&amp;seq=0&amp;sVar=&amp;sVal=">6</a> <a href="?page=7&amp;seq=0&amp;sVar=&amp;sVal=">7</a> <a href="?page=8&amp;seq=0&amp;sVar=&amp;sVal=">8</a> <a href="?page=9&amp;seq=0&amp;sVar=&amp;sVal=">9</a> <a href="?page=10&amp;seq=0&amp;sVar=&amp;sVal=">10</a> <a href="?page=11&amp;seq=0&amp;sVar=&amp;sVal="><span><img src='http://www.kumyoung.co.kr/img/bbs/page_next.gif' alt='다음 10 페이지'></span></a><a href="?page=39&amp;seq=0&amp;sVar=&amp;sVal="><span><img src='http://www.kumyoung.co.kr/img/bbs/page_last.gif' alt='마지막 페이지'></span></a>
+                    </div>
+                </div>
+                <!-- //Paging -->
+
+                <!-- 게시판검색 -->
+                <div class="bbs_search">
+                    <form name="searchBBS" id="searchBBS" method="GET" action="notice_list.html">
+                        <select name="sVar">
+                            <option value="all">전체</option>
+                            <option value="title" >제목</option>
+                            <option value="content" >내용</option>
+                        </select>
+                        <input type="text" id="sVal" name="sVal" class="input_bbs" title="키워드 입력" value="">
+                        <img id="sBtn" src="http://www.kumyoung.co.kr/img/b/btn_search_bbs.gif" alt="검색">
+                    </form>
+                </div>
+                <!-- //게시판검색 -->
+                <!-- //♡♡Memo -->
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+    <!-- Footer -->
+    <footer id="page-footer" class="page-footer">
+        <div class="footer_text">
+            <ul>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">회사위치/연락처</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">대리점안내</a>
+                </li>
+                <li>
+                    <a href="#">반주기 피난안내 영상물 등록</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="footer_main">
+            <div class="kylogo"><img src="../img/main/footer_kylogo.gif"></div>
+            <div class="copyright">COPYRIGHT © 금영그룹(Keumyoung Group Co., Ltd) ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="../assets/js/core/jquery.appear.min.js"></script>
+<script src="../assets/js/core/jquery.countTo.min.js"></script>
+<script src="../assets/js/core/jquery.placeholder.min.js"></script>
+<script src="../assets/js/core/js.cookie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- Page JS Code -->
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+    });
+</script>
+</body>
+</html>
