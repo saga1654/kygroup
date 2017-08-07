@@ -1,27 +1,29 @@
+
+
 /*********** 상단 색상 ******************/
 .top_header { background-color:#357ea6; text-align:center; }
-.top_header .top_gnb { width:1004px;  margin:0 auto; color:#fff; text-align:right; padding:9px 0px 1px 0px;}
+.top_header .top_gnb { width:1004px;  margin:0 auto; color:#fff; text-align:right; padding:9px 0 1px 0;}
 .top_header .top_gnb ul {}
 .top_header .top_gnb ul li { display:inline; padding-left:9px; font-size:11px;}
 /*.top_header .top_gnb ul li:first-child { width:200px; }*/
 .top_header .top_gnb ul a { text-decoration:none; color:#fff; }
 
 .top_gnb_menu { background-color:#fff; height:85px; }
-.top_gnb_menu .menu { width:1004px; margin:0 auto; padding:28px 0px 23px 0px;}
+.top_gnb_menu .menu { width:1004px; margin:0 auto; padding:28px 0 23px 0;}
 .top_gnb_menu .logo { width:230px; float:left;  }
 .top_gnb_menu .menu_btn { width:640px; float:left;}
 .top_gnb_menu .menu_btn ul { padding-top:5px; }
 .top_gnb_menu .menu_btn ul li { display:inline; font-size:18px; font-weight: bold; padding-left:40px; color:#000; }
 .top_gnb_menu .share_btn { float:right; padding-top:2px;}
-.top_gnb_menu .share_btn ul { padding:0px; }
+.top_gnb_menu .share_btn ul { padding:0; }
 .top_gnb_menu .share_btn li { display:inline;}
 
 .top_line { height:2px; width:100%; background-color:#357ea6; }
 
 
 /************ MAIN 컨텐츠 ******************/
-#main-container {min-width:1004px;}
-#main-container .contents { width:1004px; margin:0 auto; padding:26px 0px; height:564px; }
+#main-container {min-width:1100px;}
+#main-container .contents { width:1100px; margin:0 auto; padding:26px 0; height:564px; }
 #main-container .contents .c01 { }
 #main-container .contents .c01 .left_box { width:239px; height:250px;  position: relative; float:left; }
 #main-container .contents .c01 .center_box { width:494px; height:250px; position: relative; left:16px; border:1px solid #dadada; float:left; background-color:#fff; }
@@ -30,8 +32,8 @@
 #main-container .contents .c01 .center_box .kytitle_plus { padding:23px; float:right; }
 #main-container .contents .c01 .center_box .newsList { width:447px; margin:0 auto; }
 #main-container .contents .c01 .center_box .newsList .kynews_table tr { border-bottom:1px solid #e5e5e5;}
-#main-container .contents .c01 .center_box .newsList .kynews_table tr td { color:#888888; font-size:11px;  padding:10px 0px 10px 0px; }
-#main-container .contents .c01 .center_box .newsList .kynews_table tr:last-child { color:#888888; font-size:11px;  padding:14px 0px 5px 0px;  border-bottom: none;}
+#main-container .contents .c01 .center_box .newsList .kynews_table tr td { color:#888888; font-size:11px;  padding:10px 0 10px 0; }
+#main-container .contents .c01 .center_box .newsList .kynews_table tr:last-child { color:#888888; font-size:11px;  padding:14px 0 5px 0;  border-bottom: none;}
 #main-container .contents .c01 .center_box .newsList .kynews_table tr td:last-child { text-align: right;}
 
 #main-container .contents .c01 .right_box { width:239px; height:250px; position: relative; left:32px;float:left; }
@@ -44,77 +46,504 @@
 #main-container .contents .c02 .box04 { width:239px; height:250px;  position: relative; left:48px;  float:left; }
 
 
-#main-container .customer { background-color:#e5eff0; height:333px; margin:0 auto; text-align:center; padding:50px 0px; }
+#main-container .customer { background-color:#e5eff0; height:333px; margin:0 auto; text-align:center; padding:50px 0; }
 #main-container .customer .title_line { background-color:#357ea6; height:2px; width:29px; margin:0 auto; }
 #main-container .customer .title { color:#3d4040; font-size:18px; width:200px; padding-top:17px; margin:0 auto; text-align: center; padding-bottom:40px; }
 
 #main-container .customer .customer_box { width:1004px; margin:0 auto; text-align:center; }
-#main-container .customer ul { padding:0px;}
-#main-container .customer ul li:first-child { display:inline; padding:0px; }
-#main-container .customer ul li { display:inline; padding:0px 0px 0px 10px; }
+#main-container .customer ul { padding:0;}
+#main-container .customer ul li:first-child { display:inline; padding:0; }
+#main-container .customer ul li { display:inline; padding:0 0 0 10px; }
 
 
 
 
-#main-container .music { background-color:#c3dae7; height:252px; margin:0 auto; text-align:center; padding:50px 0px; }
+#main-container .music { background-color:#c3dae7; height:252px; margin:0 auto; text-align:center; padding:50px 0; }
 #main-container .music .title_line { background-color:#357ea6; height:2px; width:29px; margin:0 auto; }
 #main-container .music .title { color:#3d4040; font-size:18px; width:200px; padding-top:17px; margin:0 auto; text-align: center; padding-bottom:40px; }
 
 #main-container .music .music_box  { width:1004px; margin:0 auto; text-align:center; }
-#main-container .music ul { padding:0px;}
-#main-container .music ul li:first-child { display:inline; padding:0px; }
-#main-container .music ul li { display:inline; padding:0px 0px 0px 10px; }
+#main-container .music ul { padding:0;}
+#main-container .music ul li:first-child { display:inline; padding:0; }
+#main-container .music ul li { display:inline; padding:0 0 0 10px; }
 
 
-#main-container .music2 { margin:0 auto; text-align:center; padding:54px 0px 48px 0px; width:1004px; }
-#main-container .music2 ul { padding:0px; }
-#main-container .music2 ul li { display:inline; padding:0px 35px 0px 35px; }
+#main-container .music2 { margin:0 auto; text-align:center; padding:54px 0 48px 0; width:1004px; }
+#main-container .music2 ul { padding:0; }
+#main-container .music2 ul li { display:inline; padding:0 35px 0 35px; }
 
 
-#main-container .callcenter { margin:0 auto; text-align:center; padding:0px 0px; width:1004px; }
-#main-container .callcenter ul { padding:0px; }
+#main-container .callcenter { margin:0 auto; text-align:center; padding:0 0; width:1004px; }
+#main-container .callcenter ul { padding:0; }
 #main-container .callcenter ul li:first-child{ display:inline; padding:0px; }
 #main-container .callcenter ul li { display:inline; padding-left:10px; }
 
-#main-container .footer_logo { margin:0 auto; text-align:center; padding:39px 0px 20px 0px; width:1004px; }
-#main-container .footer_logo ul { padding:0px; }
-#main-container .footer_logo ul li:first-child{ display:inline; padding:0px; }
+#main-container .footer_logo { margin:0 auto; text-align:center; padding:39px 0 20px 0; width:1004px; }
+#main-container .footer_logo ul { padding:0; }
+#main-container .footer_logo ul li:first-child{ display:inline; padding:0; }
 #main-container .footer_logo ul li { display:inline; padding-left:52px; }
 
 
-#main-container .container { width:1004px; margin:0 auto;  }
+#main-container .container { width:1100px; margin:0 auto;  }
 
 #main-container .left_menu {float:left; width:247px; border-left:1px solid #dadada; border-right:1px solid #dadada; }
-#main-container .left_menu .left_title { background-color:#357ea6; padding:36px 0px; text-align: center; color:#fff; font-size:24px; }
+#main-container .left_menu .left_title { background-color:#357ea6; padding:36px 0; text-align: center; color:#fff; font-size:24px; }
 #main-container .left_menu .menu_gnb { width:247px; min-height:500px; }
-#main-container .left_menu .menu_gnb .step1 { list-style: none; padding:0px; }
-#main-container .left_menu .menu_gnb .step1 li { border-bottom:1px solid #dadada; width:100%; padding:13px 0px 10px 0px; }
-#main-container .left_menu .menu_gnb .step1 li:last-child { width:100%; padding:13px 0px 5px 0px; }
+#main-container .left_menu .menu_gnb .step1 { list-style: none; padding:0; }
+#main-container .left_menu .menu_gnb .step1 li { border-bottom:1px solid #dadada; width:100%; padding:13px 0 10px 0; }
+#main-container .left_menu .menu_gnb .step1 li:last-child { width:100%; padding:13px 0 5px 0; }
 #main-container .left_menu .menu_gnb .step1 li a { padding-left: 24px; text-decoration:none; color:#585858; }
 
-#main-container .left_menu .menu_gnb .step2 { list-style:none; padding:0px 0px 0px 40px; }
-#main-container .left_menu .menu_gnb .step2 li:first-child { border-bottom:none; padding-top:0px; width:100%;  }
-#main-container .left_menu .menu_gnb .step2 li { border-bottom:0px; width:100%;}
-#main-container .left_menu .menu_gnb .step2 li a { padding:0px; text-decoration:none; color:#585858; }
+#main-container .left_menu .menu_gnb .step2 { list-style:none; padding:0 0 0 40px; }
+#main-container .left_menu .menu_gnb .step2 li:first-child { border-bottom:none; padding-top:0; width:100%;  }
+#main-container .left_menu .menu_gnb .step2 li { border-bottom:0; width:100%;}
+#main-container .left_menu .menu_gnb .step2 li a { padding:0; text-decoration:none; color:#585858; }
 
 
-#main-container .container .main_contents { padding:36px 0px 0px 72px; margin-left:247px; background-color:#fff; width:753px;}
+#main-container .container .main_contents { padding:36px 0 0 72px; background-color:#fff; width:753px; float: left;}
 #main-container .container .main_contents .contents_title { color:#357ea6; font-weight:bold; font-size:24px; }
 #main-container .container .main_contents .txt {  padding-top:36px;  }
 
+/* Contents Visual Area ================================ */
+#Contents .cva {height:120px; overflow:hidden; position:relative;}
+#Contents .cva_cs {height:102px;}
+#Contents .cva .cva_go {position:absolute; left:445px; top:22px;}
+
+/* 서브메인 */
+#Contents .index_item {width:1000px; padding-left:19px; padding-top:22px; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/product/index_bg_line.gif') no-repeat 0 0;}
+#Contents .index_item .item_banner {float:left; width:303px;}
+
+#Contents .index_item .index_item01 {float:left; width:355px; overflow:hidden; *margin-bottom:13px; _margin-bottom:0;}
+#Contents .index_item .index_item01 dl {float:left; width:500px; padding-left:37px;  overflow:visible; min-height:120px; _height:120px; margin-bottom:13px; background:url('http://www.kumyoung.co.kr/img/product/index_shadow01.gif') no-repeat left bottom;}
+
+#Contents .index_item .index_item01 dl dt {float:left; width:153px;}
+#Contents .index_item .index_item01 dl dt img {border:1px solid #e6e6e6;}
+
+#Contents .index_item .index_item01 dl dd {float:left;}
+
+#Contents .index_item .index_item01 dl dd.title {line-height:15px; width:155px; padding-left:10px; font-weight:bold; margin-bottom:8px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0 2px;}
+#Contents .index_item .index_item01 dl dd.title img {vertical-align:middle;}
+#Contents .index_item .index_item01 dl dd.title a {color:#e71d0f;}
+#Contents .index_item .index_item01 dl dd.title a:hover {color:#e71d0f;}
+
+#Contents .index_item .index_item01 dl dd.info ul{padding: 0 0 0 0; margin: 0;}
+#Contents .index_item .index_item01 dl dd.info {width:200px; padding-left:0;}
+#Contents .index_item .index_item01 dl dd.info li {padding-left:10px; overflow:hidden; line-height:15px; color:#474646; background:url('http://www.kumyoung.co.kr/img/i/icon_dot_red.gif') no-repeat 0 5px;}
+#Contents .index_item .index_item01 dl dd.info li span {float:left;}
+#Contents .index_item .index_item01 dl dd.info li .info_title {width:70px;}
+#Contents .index_item .index_item01 dl dd.info li .info_memo {width:120px;}
+#Contents .index_item .index_item01 dl dd.info li .info_title2 {width:152px;}
+
+/* 서브메인 밑에꺼  ===================== */
+#Contents .index_item .index_item02 {width:680px; overflow:hidden; margin-bottom:13px; background:url('http://www.kumyoung.co.kr/img/product/index_shadow02.gif') no-repeat left bottom;}
+#Contents .index_item .index_item02_end {background:none;}
+#Contents .index_item .index_item02 dl {float:left; width:300px; overflow:visible; min-height:120px; _height:120px; margin-right:40px;}
+#Contents .index_item .index_item02 dl.end {margin-right:0px;}
+
+#Contents .index_item .index_item02 dl dt {float:left; width:153px;}
+#Contents .index_item .index_item02 dl dt img {border:1px solid #e6e6e6;}
+
+#Contents .index_item .index_item02 dl dd {float:left;}
+
+#Contents .index_item .index_item02 dl dd.title {line-height:15px; width:140px; padding-left:10px; font-weight:bold; margin-bottom:8px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0 2px;}
+#Contents .index_item .index_item02 dl dd.title img {vertical-align:middle;}
+#Contents .index_item .index_item02 dl dd.title a {color:#e71d0f;}
+#Contents .index_item .index_item02 dl dd.title a:hover {color:#e71d0f;}
+#Contents .index_item .index_item02 dl dd.info ul{padding: 0 0 0 0; margin: 0;}
+#Contents .index_item .index_item02 dl dd.info {width:140px;}
+#Contents .index_item .index_item02 dl dd.info li {padding-left:10px; overflow:hidden; line-height:15px; color:#474646; background:url('http://www.kumyoung.co.kr/img/i/icon_dot_red.gif') no-repeat 0 5px;}
+#Contents .index_item .index_item02 dl dd.info li span {float:left;border:0 solid red;}
+#Contents .index_item .index_item02 dl dd.info li span.info_title {width:60px; }
+#Contents .index_item .index_item02 dl dd.info li span.info_memo {width:70px;}
+#Contents .index_item .index_item02 dl dd.info li span.info_title2 {width:100px;}
+
+/* 001제품정보 */
+#Contents .thumbnailWrap {height:108px; border-bottom:2px solid #EBEBEB; padding-bottom:10px; margin-bottom:5px;} /* 2010.02.03 수정 */
+#Contents .thumbnailWrap #product_list {float:left;}
+#Contents .thumbnailWrap #product_list li {list-style: none; float:left; width:80px; height:108px;}
+#Contents .thumbnailWrap #product_list li img {width:70px; height:71px; margin:1px; border:1px solid #d0d0d0;}
+#Contents .thumbnailWrap #product_list li.on ,
+#Contents .thumbnailWrap #product_list li a:hover {background:url('http://www.kumyoung.co.kr/img/product/thum_prdlist_bg.gif') no-repeat 0 0;}
+#Contents .thumbnailWrap #product_list li.on img ,
+#Contents .thumbnailWrap #product_list li a:hover img {width:70px; height:71px; margin:0px; border:2px solid #f52000;}
+#Contents .thumbnailWrap #product_list li span {width:73px; margin-top:2px; *margin-top:7px; text-align:center; display:block; line-height:14px;}
+#Contents .thumbnailWrap #product_list li span a {color:#858585;}
+#Contents .thumbnailWrap #product_list li span a:hover {color:#44A1A7;}
+#Contents .thumbnailWrap .scrollLeft {float:left; margin:0;}
+#Contents .thumbnailWrap .scrollRight {float:right; margin:0;}
+
+#Contents .thumbnailWrap .mb13 li{list-style: none;}
+
+#Contents .product_info {overflow:hidden; margin-bottom:30px;}
+#Contents .product_info .thum {float:left; width:324px; height:275px; padding-left:15px; padding-top:9px; background:url('http://www.kumyoung.co.kr/img/product/thum_img_bg.gif') no-repeat 0 0;}
+#Contents .product_info .thum ul {overflow:hidden; height:23px; margin-left:8px;}
+#Contents .product_info .thum ul li {float:left; margin-right:13px;}
+#Contents .product_info .thum dl {display:block;}
+#Contents .product_info .thum dl img {width:253px; height:182px;}
+#Contents .product_info .thum dt {display:block; overflow:hidden;}
+#Contents .product_info .thum dd {float:left; margin-right:13px;}
+#Contents .product_info .thum dd.end {margin-right:0;}
+#Contents .product_info .thum dd img {width:70px; height:50px; border:3px solid #f0f0f0;}
+#Contents .product_info .thum dd a:hover img {width:70px; height:50px; border:3px solid #F52000;}
+#Contents .product_info .summ {float:left; width:341px;}
+#Contents .product_info .summ h3.product_title {height:32px; color:#e71d0f; font-size:16px; font-weight:bold; padding-top:5px;}
+#Contents .product_info .summ .summ1 {float:left; width:341px; border-top:1px solid #d1412c; border-bottom:1px solid #d1412c;}
+#Contents .product_info .summ .summ1 dt {float:left; padding-left:2px; width:90px; padding-top:10px; height:25px;}
+#Contents .product_info .summ .summ1 dd {float:left; padding-left:32px; width:215px; padding-top:11px; height:24px; line-height:12px; background:url('http://www.kumyoung.co.kr/img/i/icon_vertical_1px.gif') no-repeat 0 12px;}
+#Contents .product_info .summ .summ1 dt.txt_product_type {padding-top:17px; height:18px;}
+#Contents .product_info .summ .summ1 dd.txt_product_type2 {padding-top:18px; height:17px; background:url('http://www.kumyoung.co.kr/img/i/icon_vertical_1px.gif') no-repeat 0 20px;}
+#Contents .product_info .summ .summ1 dd span {color:#44a1a7;}
+/* 2010.02.03 수정 */
+#Contents .product_info .summ .summ2 {clear:both; float:left; width:341px; border-bottom:1px solid #ececec; }
+#Contents .product_info .summ .summ2 li.title9 {float:left; padding-left:14px; width:103px; padding-top:5px; padding-bottom:3px; background:url('http://www.kumyoung.co.kr/img/i/icon_dot_red.gif') no-repeat 0 11px;}
+#Contents .product_info .summ .summ2 li.memo9 {float:left; padding-left:32px; width:192px; padding-top:5px; padding-bottom:3px; background:url('http://www.kumyoung.co.kr/img/i/icon_vertical_1px.gif') no-repeat 0 8px;}
+/* //2010.02.03 수정 */
+
+
+#Contents .product_info_view {clear:both; margin-bottom:10px;}
+
+#Contents .mb13 {margin-bottom:13px;}
+
+
+/* SubMain ================================ */
+#Contents{position: relative; float: left; width: 680px; z-index: 9;}
+#Contents .csWrapper {position:relative; width:680px; height:670px; background:url('http://www.kumyoung.co.kr/img/support/sm_cs_bg.jpg') no-repeat; }
+
+#Contents .csWrapper .csBox01 h2 {position:absolute; left:1px; top:209px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox01 ul {position:absolute; left:11px; top:235px; }
+#Contents .csWrapper .csBox01 li {height:18px; color:#787878; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_dot_red.gif') no-repeat 0 5px;}
+#Contents .csWrapper .csBox01 li strong {color:#44a1a7; font-weight:normal;}
+#Contents .csWrapper .csBox01 li strong a, #Contents .csWrapper .csBox01 li strong a:hover {color:#44a1a7;}
+
+#Contents .csWrapper .csBox02 h2 {position:absolute; left:1px; top:357px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox02 ul {position:absolute; width:210px; left:13px; top:382px; }
+#Contents .csWrapper .csBox02 li {float:left; margin-right:1px; margin-bottom:1px;}
+#Contents .csWrapper .csBox02 img {vertical-align:top;}
+
+#Contents .csWrapper .csBox03 h2 {position:absolute; left:227px; top:357px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox03 p {position:absolute; left:227px; top:388px; padding-left:10px;}
+#Contents .csWrapper .csBox03 span {position:absolute; left:227px; top:422px; padding-left:10px;}
+
+#Contents .csWrapper .csBox04 h2 {position:absolute; left:1px; top:470px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox04 p {position:absolute; left:1px; top:495px; padding-left:10px;}
+#Contents .csWrapper .csBox04 span {position:absolute; left:1px; top:528px; padding-left:10px;}
+
+#Contents .csWrapper .csBox05 h2 {position:absolute; left:227px; top:470px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox05 p {position:absolute; left:227px; top:495px; padding-left:10px;}
+#Contents .csWrapper .csBox05 span {position:absolute; left:227px; top:528px; padding-left:10px;}
+
+#Contents .csWrapper .csBox06 h2 {position:absolute; left:454px; top:470px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox06 p {position:absolute; left:454px; top:495px; padding-left:10px;}
+#Contents .csWrapper .csBox06 span {position:absolute; left:454px; top:528px; padding-left:10px;}
+
+#Contents .csWrapper .csBox07 h2 {position:absolute; left:227px; top:576px; padding-left:10px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0px 2px;}
+#Contents .csWrapper .csBox07 ul { position:absolute; left:237px; top:598px; width:210px;}
+#Contents .csWrapper .csBox07 li {float:left; margin-right:1px; margin-bottom:1px;}
+#Contents .csWrapper .csBox07 img {vertical-align:top;}
+
+
+#Contents .ct_img {clear:both; overflow:hidden; padding-top:15px; margin-bottom:15px;}
+#Contents .ct_img .img01 {padding-right:30px; padding-left:35px; float:left;text-align:center;}
+#Contents .ct_img .img01 li {padding-top:10px; }
+#Contents .ct_img .img01 img {vertical-align:middle; margin-top:-2px;}
+#Contents .ct_img .img01 .ss {text-align:left; width:271px; height:353px; padding-top:3px; padding-left:1px; background:url('http://www.kumyoung.co.kr/img/support/img_newposter01_bg.gif') no-repeat 0 0;}
+
+#Contents .thumBox {padding-left:17px; padding-bottom:15px; text-align:center; overflow:hidden;}
+#Contents .thumBox ul {float:left; width:110px; text-align:center;}
+#Contents .thumBox li {padding-top:10px;}
+#Contents .thumBox img {vertical-align:middle; margin-top:-2px;}
+#Contents .thumBox li.ss img {vertical-align:middle; width:91px; height:127px; border:1px solid #e6e6e6;}
+
+
+#Contents h5.center_title {position:relative; width:668px; padding-left:12px; display:block; height:23px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 1px 2px;}
+#Contents .namechekBox01 {margin-bottom:5px;}
+#Contents .namechekBox01 p {margin-bottom:10px;}
+#Contents .namechekBox02 {height:70px; padding-top:20px; padding-left:162px;  background:url('http://www.kumyoung.co.kr/img/support/namechek_bg.gif') no-repeat 0 0;}
+#Contents .namechekBox02 td {padding-top:5px; padding-left:30px; }
+
+/* 일반페이지 ================================ */
+#Contents .cs_location {width:680px; height:274px; margin-bottom:30px; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_location_title_bg.gif') no-repeat 0 0;}
+#Contents .cs_location .csl_map {float:left; width:320px; padding-top:0px; padding-left:0px;}
+#Contents .cs_location .csl_memo {float:left;}
+#Contents .cs_location .csl_memo .titlearea {height:127px; padding-top:39px;}
+#Contents .cs_location .csl_memo .titlearea .title {height:28px;}
+#Contents .cs_location .csl_memo .area {float:left; margin-right:55px;}
+#Contents .cs_location .csl_memo .area h4.area_title {_display:inline; padding-left:10px; height:18px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0 2px;}
+#Contents .cs_location .csl_memo .area ul.area_sub {float:left; padding-top:10px; border-top:1px solid #ececec;}
+#Contents .cs_location .csl_memo .area ul.area_sub li {float:left; margin-right:3px;}
+#Contents .cs_location .csl_memo .area ul.area_sub li.first {margin-left:-2px;}
+#Contents .cs_location .csl_memo .area ul.area_sub li.last {margin-right:0px;}
+#Contents .cs_location .csl_memo .area_end {margin-right:0px;}
+
+#Contents .csl_center {clear:both; margin-bottom:30px;}
+#Contents .csl_center_end {margin-bottom:0px;}
+#Contents .csl_center h5.center_title {position:relative; width:668px; padding-left:12px; display:block; border-bottom:1px solid #cfcfcf; height:23px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 1px 2px;}
+#Contents .csl_center h5.center_title span.map_view {position:absolute; top:-3px; right:0;}
+#Contents .csl_center .center_tb {width:680px; overflow:hidden;}
+#Contents .csl_center .center_tb table {table-layout:fixed;}
+#Contents .csl_center .center_tb tbody th {width:85px; height:27px; *height:26px; text-align:left; padding-left:15px; vertical-align:middle; border-bottom:1px solid #ececec;}
+#Contents .csl_center .center_tb tbody td {width:550px; height:27px; *height:24px; text-align:left; padding-left:30px; padding-top:2px; vertical-align:middle; border-bottom:1px solid #ececec;}
+#Contents .csl_center .center_tb tbody td.top {background:url('http://www.kumyoung.co.kr/img/bbs/th_view_sai.gif') no-repeat left top;}
+
+#Contents .region_list {float:left; width:680px; border-top:1px solid #ECECEC; margin-bottom:30px;}
+#Contents .region_list li {float:left; height:18px; padding-top:5px; width:63px; padding-left:22px; vertical-align:middle; border-bottom:1px solid #ECECEC; background:url('http://www.kumyoung.co.kr/img/i/icon_td_dot.gif') no-repeat 12px 10px;}
+#Contents .region_list li a:hover {color:#44a1a7;}
+#Contents .region_list li.on a , #Contents .region_list li.on a:hover {color:#44a1a7;}
+#Contents .region_list li.none {background:none;}
+#Contents .search_result_title {clear:both; color:#44A1A7; height:30px; overflow:hidden;}
+#Contents .search_result_title .search_icon_info {float:right;}
+#Contents .search_result_title .search_icon_info img {vertical-align:middle;}
+#Contents .search_result_title .search_icon_info img.item1 {margin-right:6px;}
+#Contents .search_result_title .search_result_memo {float:left; margin-top:5px;}
+#Contents .search_result_title .search_result_memo img {vertical-align:middle; *margin-top:-2px;}
+
+#Contents .agent_info_box01 {width:660px; height:150px; padding-top:20px; padding-left:20px; background:url('http://www.kumyoung.co.kr/img/support/agent_info_bg.gif') no-repeat 0 0;}
+#Contents .agent_info_box01 dl.new_agent {float:left; width:200px;}
+#Contents .agent_info_box01 dl.change_name_agent {float:left; width:220px;}
+#Contents .agent_info_box01 dl.create_hp {float:left; width:205px;}
+#Contents .agent_info_box01 dt {height:30px; padding-left:11px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0 2px;}
+#Contents .agent_info_box01 dd {height:18px; padding-left:11px; background:url('http://www.kumyoung.co.kr/img/i/icon_dot_red.gif') no-repeat 0 6px;}
+#Contents .agent_info_box01 dd a {color:#858585;}
+#Contents .agent_info_box01 dd a:hover {color:#858585;}
+
+#Contents h3.local_agent {height:44px; background:url('http://www.kumyoung.co.kr/img/support/gubun_horizon.gif') no-repeat 0 bottom;}
+#Contents .agent_info_box02 {overflow:hidden; margin-bottom:23px;}
+#Contents .agent_info_box02 span {float:right; margin-right:15px;}
+#Contents .agent_info_box02 .txt_gudongip {margin-bottom:10px;}
+#Contents .agent_info_box02 .search_agent select {width:75px; height:19px; *height:18px; color:#858585; padding-left:10px;}
+#Contents .agent_info_box02 .search_agent input.input_bbs {width:135px; border:1px solid #d6d6d6; height:14px; padding:3px 3px 0 3px;}
+#Contents .agent_info_box02 .search_agent img {vertical-align:middle;}
+
+#Contents .refuge_info_box01 {margin-bottom:30px;}
+#Contents .refuge_reg_input {overflow:hidden; color:#d6d6d6; width:680px; height:110px; background:url('http://www.kumyoung.co.kr/img/support/gubun_horizon.gif') no-repeat 0 75px;}
+#Contents .refuge_reg_input table {float:left; margin-right:20px;}
+#Contents .refuge_reg_input th {text-align:left; padding-left:11px; background:url('http://www.kumyoung.co.kr/img/i/icon_front_point_01.gif') no-repeat 0 50%;}
+#Contents .refuge_reg_input td.last img {margin-bottom:2px;}
+#Contents .refuge_login_info {float:left; margin-top:3px;}
+#Contents .refuge_info_box02 {clear:both;}
+
+#Contents .refuge_info_list {overflow:hidden; width:680px; height:84px; background:url('http://www.kumyoung.co.kr/img/support/gubun_horizon.gif') no-repeat 0 25px;}
+#Contents .refuge_info_list_line3 {height:100px;}
+#Contents .refuge_info_list dt {height:37px;}
+#Contents .refuge_info_list dd.refuge_info_memo ul {overflow:hidden;}
+#Contents .refuge_info_list dd.refuge_info_memo ul li {height:14px; padding-top:2px; padding-left:31px; vertical-align:middle; background:url('http://www.kumyoung.co.kr/img/i/icon_dot_red.gif') no-repeat 20px 50%;}
+#Contents .refuge_info_list dd.refuge_info_btn {float:right; margin-top:1px;}
+#Contents .refuge_info_guide {margin-top:55px;}
+
+#Contents .memoBox01 {overflow:hidden; width:659px; padding-left:21px; padding-top:22px; background:url('http://www.kumyoung.co.kr/img/support/contens_square_bg.gif') no-repeat 0 0;}
+#Contents .memoBox01 .memoBox_l {float:left; width:318px;}
+#Contents .memoBox01 .memoBox_l h3.h3_ky_coupon {height:32px; overflow:hidden;}
+#Contents .memoBox01 .memoBox_l .photo_ky_coupon {padding-left:16px; overflow:hidden; margin-bottom:8px;}
+#Contents .memoBox01 .memoBox_l .btn_gift_info {padding-left:16px;}
+#Contents .memoBox01 .memoBox_l .btn_gift_info img {margin-right:6px;}
+#Contents .memoBox01 .memoBox_rtop {float:left; width:306px; padding-top:44px; height:62px; margin-bottom:18px; border-bottom:1px solid #e6e6e6;}
+#Contents .memoBox01 .memoBox_rbottom {float:left; width:306px;}
+#Contents .memoBox01 .memoBox_rbottom p {clear:both;}
+#Contents .memoBox01 .memoBox_rbottom p img {vertical-align:middle;}
+#Contents .memoBox01 .memoBox_rbottom p span.txt_l {float:left; padding-left:22px; background:url('http://www.kumyoung.co.kr/img/i/icon_mark01.gif') no-repeat 0 6px;}
+#Contents .memoBox01 .memoBox_rbottom p span.btn_r {float:right;}
+#Contents .memoBox01 .memoBox_rbottom p span.txt_r img ,
+#Contents .memoBox01 .memoBox_rbottom p span.txt_l img {padding-top:3px;}
+
+#Contents .cs_info_ct01 {margin-left:20px; margin-bottom:12px; width:314px; height: 244px; float:left; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_info_ctimg01.jpg') no-repeat 0 0; }
+#Contents .cs_info_ct01 ul {padding-left:130px; padding-top:20px;}
+#Contents .cs_info_ct01 li {height:24px; }
+#Contents .cs_info_ct01 img {padding-right:5px;}
+#Contents .cs_info_ct01 strong {color:#44a1a7; font-weight:normal;}
+#Contents .cs_info_ct01 a,
+#Contents .cs_info_ct02 a,
+#Contents .cs_info_ct03 a,
+#Contents .cs_info_ct04 a,
+#Contents .cs_info_ct05 a {color:#858585; text-decoration:none;}
+#Contents .cs_info_ct01 a:hover,
+#Contents .cs_info_ct02 a:hover,
+#Contents .cs_info_ct03 a:hover,
+#Contents .cs_info_ct04 a:hover,
+#Contents .cs_info_ct05 a:hover{color:#44a1a7; text-decoration:none;}
+
+#Contents .cs_info_ct02 {margin-left:20px; margin-bottom:12px; width:314px; height: 244px; float:left; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_info_ctimg02.jpg') no-repeat 0 0; }
+#Contents .cs_info_ct02 ul {padding-left:130px; padding-top:20px;}
+#Contents .cs_info_ct02 li {height:24px;}
+#Contents .cs_info_ct02 img {padding-right:5px;}
+
+#Contents .cs_info_ct03 {margin-left:20px; margin-bottom:10px; width:155px; height: 215px; float:left; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_info_ctimg03.jpg') no-repeat 0 0;}
+#Contents .cs_info_ct03 ul {padding-left:15px; padding-top:50px; line-height:200%;}
+#Contents .cs_info_ct03 img {padding-right:5px;}
+
+#Contents .cs_info_ct04 {margin-left:10px; margin-bottom:10px; width:154px; height: 215px; float:left; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_info_ctimg04.jpg') no-repeat 0 0;}
+#Contents .cs_info_ct04 ul {padding-left:15px; padding-top:50px; line-height:200%;}
+#Contents .cs_info_ct04 img {padding-right:5px;}
+
+#Contents .cs_info_ct05 {margin-left:9px; margin-bottom:10px; width:154px; height: 215px; float:left; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_info_ctimg05.gif') no-repeat 0 0;}
+#Contents .cs_info_ct05 ul {padding-left:15px; padding-top:50px; line-height:200%;}
+#Contents .cs_info_ct05 img {padding-right:5px;}
+
+#Contents .cs_info_ct06 {margin-left:10px; margin-bottom:10px; width:155px; height: 215px; float:left; overflow:hidden; background:url('http://www.kumyoung.co.kr/img/support/cs_info_ctimg06.jpg') no-repeat 0 0;}
+#Contents .cs_info_ct06 ul {padding-left:15px; padding-top:50px; line-height:200%;}
+#Contents .cs_info_ct06 img {padding-right:5px;}
+
+#Contents .bbs_search {text-align:center; margin-top:20px;}
+#Contents .bbs_search select {width:75px; height:19px; *height:18px; color:#858585; padding-left:10px; font-size:12px;}
+#Contents .bbs_search input.input_bbs {width:195px; border:1px solid #d6d6d6; height:14px; padding:3px 3px 0 3px; font-size:12px;}
+#Contents .bbs_search input.input_bbs2 {width:200px; border:1px solid #e1e1e1; height:14px; padding:3px 3px 0 3px; font-size:12px;}
+#Contents .bbs_search img {vertical-align:middle;}
+
+/* LED - 집어등 */
+#Contents .alignBox01 {float:left;}
+
+/* 탭메뉴_제품정보 */
+#tab_product_info {width:680px; height:30px; float:left; overflow:hidden; margin-bottom:20px; *margin-bottom:0;}
+#tab_product_info li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr//img/product/tab_product_view.gif') no-repeat 0 0;}
+#tab_product_info li a {display:block; width:116px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr//img/product/tab_product_view.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_product_info .product_info01 a {background-position:0 0;} #tab_product_info .product_info01_on a , #tab_product_info .product_info01 a:hover {background-position:0 -30px;}
+#tab_product_info .product_info02 a {background-position:-116px 0;} #tab_product_info .product_info02_on a , #tab_product_info .product_info02 a:hover {background-position:0 -30px;}
+#tab_product_info .product_info_blank {background-position:-110px 0; width:562px;}
+
+#tab_csc {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:10px;}
+#tab_csc li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_csc.gif') no-repeat 0 0;}
+#tab_csc li a {display:block; width:264px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_csc.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_csc .csc01 a {background-position:0 0;} #tab_csc .csc01_on a, #tab_csc .csc01 a:hover {background-position:0 -30px;}
+#tab_csc .csc02 a {background-position:-264px 0;} #tab_csc .csc02_on a, #tab_csc .csc02 a:hover {background-position:-264px -30px;}
+#tab_csc .csc_blank {background-position:-528px 0px; width:152px;}
+
+
+#tab_foundation_start {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:30px;}
+#tab_foundation_start li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_foundation_start.gif') no-repeat 0 0;}
+#tab_foundation_start li a {display:block; width:117px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_foundation_start.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_foundation_start .foundation_start01 a {background-position:0 0;} #tab_foundation_start .foundation_start01_on a, #tab_foundation_start .foundation_start01 a:hover {background-position:0 -30px;}
+#tab_foundation_start .foundation_start02 a {background-position:-117px 0;} #tab_foundation_start .foundation_start02_on a, #tab_foundation_start .foundation_start02 a:hover {background-position:-117px -30px;}
+#tab_foundation_start .foundation_start03 a {background-position:-234px 0;} #tab_foundation_start .foundation_start03_on a, #tab_foundation_start .foundation_start03 a:hover {background-position:-234px -30px;}
+#tab_foundation_start .foundation_start_blank {background-position:-350px 0px; width:329px;}
+
+
+#tab_national_kara {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:10px;}
+#tab_national_kara li {float:left;}
+#tab_national_kara li a {display:block; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_karaoke.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_national_kara .nkara01 a {background-position:0 0; width:42px;} #tab_national_kara .nkara01_on a, #tab_national_kara .nkara01 a:hover {background-position:0 -30px; width:42px;}
+#tab_national_kara .nkara02 a {background-position:-43px 0; width:42px;} #tab_national_kara .nkara02_on a, #tab_national_kara .nkara02 a:hover {background-position:-43px -30px; width:42px;}
+#tab_national_kara .nkara03 a {background-position:-85px 0; width:42px;} #tab_national_kara .nkara03_on a, #tab_national_kara .nkara03 a:hover {background-position:-85px -30px; width:42px;}
+#tab_national_kara .nkara04 a {background-position:-127px 0; width:43px;} #tab_national_kara .nkara04_on a, #tab_national_kara .nkara04 a:hover {background-position:-127px -30px; width:43px;}
+#tab_national_kara .nkara05 a {background-position:-170px 0; width:43px;} #tab_national_kara .nkara05_on a, #tab_national_kara .nkara05 a:hover {background-position:-170px -30px; width:43px;}
+
+#tab_national_kara .nkara06 a {background-position:-212px 0; width:42px;} #tab_national_kara .nkara06_on a, #tab_national_kara .nkara06 a:hover {background-position:-212px -30px; width:42px;}
+#tab_national_kara .nkara07 a {background-position:-254px 0; width:42px;} #tab_national_kara .nkara07_on a, #tab_national_kara .nkara07 a:hover {background-position:-254px -30px; width:42px;}
+#tab_national_kara .nkara08 a {background-position:-298px 0; width:44px;} #tab_national_kara .nkara08_on a, #tab_national_kara .nkara08 a:hover {background-position:-298px -30px; width:44px;}
+#tab_national_kara .nkara09 a {background-position:-340px 0; width:42px;} #tab_national_kara .nkara09_on a, #tab_national_kara .nkara09 a:hover {background-position:-340px -30px; width:42px;}
+#tab_national_kara .nkara10 a {background-position:-382px 0; width:42px;} #tab_national_kara .nkara10_on a, #tab_national_kara .nkara10 a:hover {background-position:-382px -30px; width:42px;}
+
+#tab_national_kara .nkara11 a {background-position:-425px 0; width:43px;} #tab_national_kara .nkara11_on a, #tab_national_kara .nkara11 a:hover {background-position:-425px -30px; width:43px;}
+#tab_national_kara .nkara12 a {background-position:-467px 0; width:42px;} #tab_national_kara .nkara12_on a, #tab_national_kara .nkara12 a:hover {background-position:-467px -30px; width:42px;}
+#tab_national_kara .nkara13 a {background-position:-509px 0; width:42px;} #tab_national_kara .nkara13_on a, #tab_national_kara .nkara13 a:hover {background-position:-509px -30px; width:42px;}
+#tab_national_kara .nkara14 a {background-position:-552px 0; width:43px;} #tab_national_kara .nkara14_on a, #tab_national_kara .nkara14 a:hover {background-position:-552px -30px; width:43px;}
+#tab_national_kara .nkara15 a {background-position:-595px 0; width:41px;} #tab_national_kara .nkara15_on a, #tab_national_kara .nkara15 a:hover {background-position:-595px -30px; width:41px;}
+#tab_national_kara .nkara16 a {background-position:-637px 0; width:45px;} #tab_national_kara .nkara16_on a, #tab_national_kara .nkara16 a:hover {background-position:-637px -30px; width:45px;}
+
+/* 탭메뉴_자주묻는질문 */
+#tab_faq {width:675px; height:34px; float:left; overflow:hidden;}
+#tab_faq li {float:left;}
+#tab_faq li a {display:block; width:75px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_faq_new.png') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_faq .faq01 a {background-position:2px 0;} #tab_faq .faq01_on a, #tab_faq .faq01 a:hover {background-position:2px -30px;}
+#tab_faq .faq02 a {background-position:-73px 0;} #tab_faq .faq02_on a, #tab_faq .faq02 a:hover {background-position:-73px -30px;}
+#tab_faq .faq03 a {background-position:-148px 0;} #tab_faq .faq03_on a, #tab_faq .faq03 a:hover {background-position:-148px -30px;}
+#tab_faq .faq04 a {background-position:-223px 0;} #tab_faq .faq04_on a, #tab_faq .faq04 a:hover {background-position:-223px -30px;}
+#tab_faq .faq05 a {background-position:-298px 0;} #tab_faq .faq05_on a, #tab_faq .faq05 a:hover {background-position:-298px -30px;}
+#tab_faq .faq06 a {background-position:-373px 0;} #tab_faq .faq06_on a, #tab_faq .faq06 a:hover {background-position:-373px -30px;}
+#tab_faq .faq07 a {background-position:-448px 0;} #tab_faq .faq07_on a, #tab_faq .faq07 a:hover {background-position:-448px -30px;}
+#tab_faq .faq08 a {background-position:-522px 0;} #tab_faq .faq08_on a, #tab_faq .faq08 a:hover {background-position:-522px -30px;}
+#tab_faq .faq09 a {background-position:-598px 0;} #tab_faq .faq09_on a, #tab_faq .faq09 a:hover {background-position:-598px -30px;}
+
+
+/* 탭메뉴_신곡포스터&속지 */
+#tab_newposter {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:10px;}
+#tab_newposter li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_newposter.gif') no-repeat 0 0;}
+#tab_newposter li a {display:block; width:117px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_newposter.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_newposter .newposter01 a {background-position:0 0;} #tab_newposter .newposter01_on a, #tab_newposter .newposter01 a:hover {background-position:0 -30px;}
+#tab_newposter .newposter02 a {background-position:-118px 0;} #tab_newposter .newposter02_on a, #tab_newposter .newposter02 a:hover {background-position:-117px -30px;}
+#tab_newposter .newposter03 a {background-position:-236px 0;} #tab_newposter .newposter03_on a, #tab_newposter .newposter03 a:hover {background-position:-233px -30px;}
+#tab_newposter .newposter04 a {background-position:-354px 0;} #tab_newposter .newposter04_on a, #tab_newposter .newposter04 a:hover {background-position:-351px -30px;}
+#tab_newposter .newposter_blank {background-position:-472px 0px; width:153px;}
+
+/*
+#tab_newposter .newposter03 a {background-position:-547px 0; width:133px; height:25px;}
+#tab_newposter .newposter03_off {background-position:-547px -30px; width:133px; height:25px;}
+*/
+
+/* 탭메뉴_상품권등록 */
+/*
+#tab_coupon {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:20px;}
+#tab_coupon li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_coupon.gif') no-repeat 0 0;}
+#tab_coupon li a {display:block; width:117px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_coupon.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_coupon .coupon01 a {background-position:0 0;} #tab_coupon .coupon01_on a, #tab_coupon .coupon01 a:hover {background-position:0 -30px;}
+#tab_coupon .coupon02 a {background-position:-117px 0;} #tab_coupon .coupon02_on a, #tab_coupon .coupon02 a:hover {background-position:-117px -30px;}
+#tab_coupon .coupon03 a {background-position:-234px 0;} #tab_coupon .coupon03_on a, #tab_coupon .coupon03 a:hover {background-position:-234px -30px;}
+#tab_coupon .coupon04 a {background-position:-351px 0;} #tab_coupon .coupon04_on a, #tab_coupon .coupon04 a:hover {background-position:-351px -30px;}
+#tab_coupon .coupon_blank {background-position:-468px 0px; width:144px;}
+#tab_coupon .coupon05 a {background-position:-612px 0; width:68px; height:25px;} #tab_coupon .coupon05_on a, #tab_coupon .coupon05 a:hover {background-position:-612px 0; width:68px; height:25px;}
+*/
+
+/* 탭메뉴_고객 서비스 센터 이용방법 */
+#tab_csc {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:10px;}
+#tab_csc li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_csc.gif') no-repeat 0 0;}
+#tab_csc li a {display:block; width:264px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_csc.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_csc .csc01 a {background-position:0 0;} #tab_csc .csc01_on a, #tab_csc .csc01 a:hover {background-position:0 -30px;}
+#tab_csc .csc02 a {background-position:-264px 0;} #tab_csc .csc02_on a, #tab_csc .csc02 a:hover {background-position:-264px -30px;}
+#tab_csc .csc_blank {background-position:-528px 0px; width:152px;}
+
+/* 탭메뉴_창업안내 창업문의 */
+#tab_foundation_start {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:30px;}
+#tab_foundation_start li {float:left; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_foundation_start.gif') no-repeat 0 0;}
+#tab_foundation_start li a {display:block; width:117px; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_foundation_start.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_foundation_start .foundation_start01 a {background-position:0 0;} #tab_foundation_start .foundation_start01_on a, #tab_foundation_start .foundation_start01 a:hover {background-position:0 -30px;}
+#tab_foundation_start .foundation_start02 a {background-position:-117px 0;} #tab_foundation_start .foundation_start02_on a, #tab_foundation_start .foundation_start02 a:hover {background-position:-117px -30px;}
+#tab_foundation_start .foundation_start03 a {background-position:-234px 0;} #tab_foundation_start .foundation_start03_on a, #tab_foundation_start .foundation_start03 a:hover {background-position:-234px -30px;}
+#tab_foundation_start .foundation_start_blank {background-position:-350px 0px; width:329px;}
+
+/* 탭메뉴_노래방검색 */
+#tab_national_kara {width:680px; height:34px; float:left; overflow:hidden; margin-bottom:10px;}
+#tab_national_kara li {float:left;}
+#tab_national_kara li a {display:block; height:30px; line-height:30px; background:url('http://www.kumyoung.co.kr/img/support/tab_karaoke.gif') no-repeat 0 0; text-indent:-7777px;}
+
+#tab_national_kara .nkara01 a {background-position:0 0; width:42px;} #tab_national_kara .nkara01_on a, #tab_national_kara .nkara01 a:hover {background-position:0 -30px; width:42px;}
+#tab_national_kara .nkara02 a {background-position:-43px 0; width:42px;} #tab_national_kara .nkara02_on a, #tab_national_kara .nkara02 a:hover {background-position:-43px -30px; width:42px;}
+#tab_national_kara .nkara03 a {background-position:-85px 0; width:42px;} #tab_national_kara .nkara03_on a, #tab_national_kara .nkara03 a:hover {background-position:-85px -30px; width:42px;}
+#tab_national_kara .nkara04 a {background-position:-127px 0; width:43px;} #tab_national_kara .nkara04_on a, #tab_national_kara .nkara04 a:hover {background-position:-127px -30px; width:43px;}
+#tab_national_kara .nkara05 a {background-position:-170px 0; width:43px;} #tab_national_kara .nkara05_on a, #tab_national_kara .nkara05 a:hover {background-position:-170px -30px; width:43px;}
+
+#tab_national_kara .nkara06 a {background-position:-212px 0; width:42px;} #tab_national_kara .nkara06_on a, #tab_national_kara .nkara06 a:hover {background-position:-212px -30px; width:42px;}
+#tab_national_kara .nkara07 a {background-position:-254px 0; width:42px;} #tab_national_kara .nkara07_on a, #tab_national_kara .nkara07 a:hover {background-position:-254px -30px; width:42px;}
+#tab_national_kara .nkara08 a {background-position:-298px 0; width:44px;} #tab_national_kara .nkara08_on a, #tab_national_kara .nkara08 a:hover {background-position:-298px -30px; width:44px;}
+#tab_national_kara .nkara09 a {background-position:-340px 0; width:42px;} #tab_national_kara .nkara09_on a, #tab_national_kara .nkara09 a:hover {background-position:-340px -30px; width:42px;}
+#tab_national_kara .nkara10 a {background-position:-382px 0; width:42px;} #tab_national_kara .nkara10_on a, #tab_national_kara .nkara10 a:hover {background-position:-382px -30px; width:42px;}
+
+#tab_national_kara .nkara11 a {background-position:-425px 0; width:43px;} #tab_national_kara .nkara11_on a, #tab_national_kara .nkara11 a:hover {background-position:-425px -30px; width:43px;}
+#tab_national_kara .nkara12 a {background-position:-467px 0; width:42px;} #tab_national_kara .nkara12_on a, #tab_national_kara .nkara12 a:hover {background-position:-467px -30px; width:42px;}
+#tab_national_kara .nkara13 a {background-position:-509px 0; width:42px;} #tab_national_kara .nkara13_on a, #tab_national_kara .nkara13 a:hover {background-position:-509px -30px; width:42px;}
+#tab_national_kara .nkara14 a {background-position:-552px 0; width:43px;} #tab_national_kara .nkara14_on a, #tab_national_kara .nkara14 a:hover {background-position:-552px -30px; width:43px;}
+#tab_national_kara .nkara15 a {background-position:-595px 0; width:41px;} #tab_national_kara .nkara15_on a, #tab_national_kara .nkara15 a:hover {background-position:-595px -30px; width:41px;}
+#tab_national_kara .nkara16 a {background-position:-637px 0; width:45px;} #tab_national_kara .nkara16_on a, #tab_national_kara .nkara16 a:hover {background-position:-637px -30px; width:45px;}
+
 /************ 하단 색상 및 사이즈 *************/
 .page-footer { background-color:#f2f2f2;  }
-.footer_text {  padding:14px 0px; margin:0 auto; width:1004px; text-align:center;}
+.footer_text {  padding:14px 0; margin:0 auto; width:1004px; text-align:center;}
 .footer_text ul { list-style:none; padding-top:10px; }
-.footer_text ul li:first-child { display:inline;text-align:center; padding:0px;}
+.footer_text ul li:first-child { display:inline;text-align:center; padding:0;}
 .footer_text ul li { display:inline;text-align:center; padding:0px 30px;}
 .footer_text ul a { text-decoration:none; color:#000;}
 .footer_logo_bg { background-color:#cccccc; }
 
 
-.footer_main { background-color:#cccccc; padding:29px 0px 26px 0px;  }
+.footer_main { background-color:#cccccc; padding:29px 0px 26px 0;  }
 .footer_main .kylogo { margin:0 auto; text-align: center; width:1004px;   }
-.footer_main .copyright { text-align:center; margin:0 auto; width:1004px; font-size:11px; color:#000; padding:20px 0px 0px 0px; }
+.footer_main .copyright { text-align:center; margin:0 auto; width:1004px; font-size:11px; color:#000; padding:20px 0 0 0; }
 
 
 
@@ -124,13 +553,13 @@
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
 .nav-tabs > li > a { border: none; color: #666; }
 .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
-.nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
 .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
 .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
-.tab-pane { padding: 15px 0px 0px 0px; }
-.tab-content{padding:10px 10px 0px 10px;}
+.tab-pane { padding: 15px 0 0 0; }
+.tab-content{padding:10px 10px 0 10px;}
 
-.card {background: #FFF none repeat scroll 0% 0%;  margin-bottom: 0px; }
+.card {background: #FFF none repeat scroll 0% 0%;  margin-bottom: 0; }
 
 /****** 인재채용 ******/
 .recruit_info {
